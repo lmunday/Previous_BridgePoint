@@ -1,8 +1,0 @@
-render : "Structure::Domain::Component_Name"
-
-shapes :
-  shape : Structure____Domain____Component_Name container
-    render : component_container "Structure::Domain::Component_Name"
-    bounds : x : 4100.0 y : 3100.0 width : 1126.0 height : 491.0
-
-connectors :

@@ -1,8 +1,0 @@
-render : "Structure::Domain::Component_Name::Logical Model"
-
-shapes :
-  shape : Class_Name
-    render : class "Structure::Domain::Component_Name::Logical Model::Class_Name"
-    bounds : x : 0.0 y : 0.0 width : 200.0 height : 150.0
-
-connectors :
