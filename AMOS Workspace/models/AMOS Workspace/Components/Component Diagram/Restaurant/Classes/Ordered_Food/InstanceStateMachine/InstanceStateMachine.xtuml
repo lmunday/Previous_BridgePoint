@@ -1,0 +1,45 @@
+-- BP 7.1.6 content: InstanceStateMachine syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO SM_ISM
+	VALUES ("f0bb89b1-a088-4450-a6f0-2c271d9e2351",
+	"edaa1738-a796-4e41-8b4e-376c08e3e717");
+INSERT INTO SM_SM
+	VALUES ("f0bb89b1-a088-4450-a6f0-2c271d9e2351",
+	'',
+	0);
+INSERT INTO SM_MOORE
+	VALUES ("f0bb89b1-a088-4450-a6f0-2c271d9e2351");
+INSERT INTO GD_MD
+	VALUES ("072cca5b-cc73-4684-af70-66f993d872fd",
+	8,
+	"f0bb89b1-a088-4450-a6f0-2c271d9e2351",
+	40,
+	0,
+	0,
+	1,
+	1,
+	1,
+	12,
+	1,
+	0,
+	0,
+	0,
+	0,
+	0,
+	'',
+	'AMOS Workspace::Components::Component Diagram::Restaurant::Classes::Ordered_Food::Instance State Machine');
+INSERT INTO DIM_DIA
+	VALUES ("072cca5b-cc73-4684-af70-66f993d872fd",
+	'',
+	1.000000,
+	0.000000,
+	0.000000,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_OBJ_PROXY
+	VALUES ("edaa1738-a796-4e41-8b4e-376c08e3e717",
+	'Ordered_Food',
+	7,
+	'ORFD',
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'../Ordered_Food.xtuml');

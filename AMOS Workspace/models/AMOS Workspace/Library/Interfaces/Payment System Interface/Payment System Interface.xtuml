@@ -1,0 +1,105 @@
+-- BP 7.1.6 content: Interface syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO C_I
+	VALUES ("2534551f-5799-4f56-be12-583b4ae84c95",
+	"00000000-0000-0000-0000-000000000000",
+	'Payment System Interface',
+	'');
+INSERT INTO C_EP
+	VALUES ("ab0143a7-fe72-44c7-b8c6-37cd2143f323",
+	"2534551f-5799-4f56-be12-583b4ae84c95",
+	0,
+	'processPayment',
+	'',
+	1);
+INSERT INTO C_AS
+	VALUES ("ab0143a7-fe72-44c7-b8c6-37cd2143f323",
+	'processPayment',
+	'',
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_PP
+	VALUES ("52f0b9e0-11df-4fd4-abde-00d1f2973a96",
+	"ab0143a7-fe72-44c7-b8c6-37cd2143f323",
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'paymentType',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_PP
+	VALUES ("f24b1646-eadc-492d-a579-462a126e42a9",
+	"ab0143a7-fe72-44c7-b8c6-37cd2143f323",
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'amount',
+	'',
+	0,
+	'',
+	"52f0b9e0-11df-4fd4-abde-00d1f2973a96");
+INSERT INTO C_PP
+	VALUES ("1e9d047c-faa1-43d5-beaf-b484c894107d",
+	"ab0143a7-fe72-44c7-b8c6-37cd2143f323",
+	"ba5eda7a-def5-0000-0000-000000000005",
+	'paymentId',
+	'',
+	0,
+	'',
+	"f24b1646-eadc-492d-a579-462a126e42a9");
+INSERT INTO C_EP
+	VALUES ("40447b50-075c-4031-920d-4209290a0b91",
+	"2534551f-5799-4f56-be12-583b4ae84c95",
+	0,
+	'paymentRejected',
+	'',
+	2);
+INSERT INTO C_AS
+	VALUES ("40447b50-075c-4031-920d-4209290a0b91",
+	'paymentRejected',
+	'',
+	1,
+	"ab0143a7-fe72-44c7-b8c6-37cd2143f323");
+INSERT INTO C_PP
+	VALUES ("b86960be-3ecb-4420-9629-b27238a8aba8",
+	"40447b50-075c-4031-920d-4209290a0b91",
+	"ba5eda7a-def5-0000-0000-000000000005",
+	'paymnetId',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_EP
+	VALUES ("3120e38a-fbed-4bbd-b264-77ae2cb9783f",
+	"2534551f-5799-4f56-be12-583b4ae84c95",
+	0,
+	'paymentAccepted',
+	'',
+	3);
+INSERT INTO C_AS
+	VALUES ("3120e38a-fbed-4bbd-b264-77ae2cb9783f",
+	'paymentAccepted',
+	'',
+	1,
+	"40447b50-075c-4031-920d-4209290a0b91");
+INSERT INTO C_PP
+	VALUES ("61461cff-67ab-483f-851c-9d042b4f3fe1",
+	"3120e38a-fbed-4bbd-b264-77ae2cb9783f",
+	"ba5eda7a-def5-0000-0000-000000000005",
+	'paymentId',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO PE_PE
+	VALUES ("2534551f-5799-4f56-be12-583b4ae84c95",
+	1,
+	"9d118cb9-a5c8-4f2d-85ef-7b5412a0f641",
+	"00000000-0000-0000-0000-000000000000",
+	6);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("9d118cb9-a5c8-4f2d-85ef-7b5412a0f641",
+	"00000000-0000-0000-0000-000000000000",
+	"ec99c19e-f138-4399-a783-5c123c46d456",
+	'Interfaces',
+	'',
+	0,
+	'../Interfaces.xtuml');

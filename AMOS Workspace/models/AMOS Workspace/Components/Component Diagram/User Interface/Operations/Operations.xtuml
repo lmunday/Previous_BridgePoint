@@ -1,0 +1,58 @@
+-- BP 7.1.6 content: Package syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO EP_PKG
+	VALUES ("39a44b11-70f2-4146-958b-5865dc549a68",
+	"00000000-0000-0000-0000-000000000000",
+	"ec99c19e-f138-4399-a783-5c123c46d456",
+	'Operations',
+	'',
+	0);
+INSERT INTO GD_MD
+	VALUES ("deb640ed-ece7-4a3f-bb59-ac15da31b0fa",
+	112,
+	"39a44b11-70f2-4146-958b-5865dc549a68",
+	108,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	'4.1.17',
+	'AMOS Workspace::Components::Component Diagram::User Interface::Operations');
+INSERT INTO DIM_DIA
+	VALUES ("deb640ed-ece7-4a3f-bb59-ac15da31b0fa",
+	'',
+	0.000000,
+	0.000000,
+	0.000000,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO PE_PE
+	VALUES ("39a44b11-70f2-4146-958b-5865dc549a68",
+	1,
+	"00000000-0000-0000-0000-000000000000",
+	"83ea1f3d-6abe-484f-867c-0b5ac40e81c4",
+	7);
+INSERT INTO C_C_PROXY
+	VALUES ("83ea1f3d-6abe-484f-867c-0b5ac40e81c4",
+	"00000000-0000-0000-0000-000000000000",
+	"00000000-0000-0000-0000-000000000000",
+	'User Interface',
+	'',
+	0,
+	"00000000-0000-0000-0000-000000000000",
+	0,
+	'',
+	'',
+	'../User Interface.xtuml');
+INSERT INTO S_SYS_PROXY
+	VALUES ("ec99c19e-f138-4399-a783-5c123c46d456",
+	'AMOS Workspace',
+	1,
+	'../../../../AMOS Workspace.xtuml');

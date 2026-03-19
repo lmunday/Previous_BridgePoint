@@ -1,0 +1,80 @@
+-- BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO O_OBJ
+	VALUES ("4060858d-f05e-4520-9d65-a9b28ebef823",
+	'Menu_Item',
+	3,
+	'MITE',
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_NBATTR
+	VALUES ("e2aad538-9e0e-4f9d-ae10-749ad83dd059",
+	"4060858d-f05e-4520-9d65-a9b28ebef823");
+INSERT INTO O_BATTR
+	VALUES ("e2aad538-9e0e-4f9d-ae10-749ad83dd059",
+	"4060858d-f05e-4520-9d65-a9b28ebef823");
+INSERT INTO O_ATTR
+	VALUES ("e2aad538-9e0e-4f9d-ae10-749ad83dd059",
+	"4060858d-f05e-4520-9d65-a9b28ebef823",
+	"00000000-0000-0000-0000-000000000000",
+	'menuItemId',
+	'',
+	'',
+	'menuItemId',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000005",
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES ("0288009d-b643-47ea-bade-1ca247d87ed8",
+	"4060858d-f05e-4520-9d65-a9b28ebef823");
+INSERT INTO O_BATTR
+	VALUES ("0288009d-b643-47ea-bade-1ca247d87ed8",
+	"4060858d-f05e-4520-9d65-a9b28ebef823");
+INSERT INTO O_ATTR
+	VALUES ("0288009d-b643-47ea-bade-1ca247d87ed8",
+	"4060858d-f05e-4520-9d65-a9b28ebef823",
+	"e2aad538-9e0e-4f9d-ae10-749ad83dd059",
+	'cost',
+	'',
+	'',
+	'cost',
+	0,
+	"2f879650-c807-4bdf-a9d8-c4938b48082b",
+	'',
+	'');
+INSERT INTO S_DT_PROXY
+	VALUES ("2f879650-c807-4bdf-a9d8-c4938b48082b",
+	"00000000-0000-0000-0000-000000000000",
+	'Money',
+	'',
+	'',
+	'../../../../../Data Types/Data Types.xtuml');
+INSERT INTO O_ID
+	VALUES (0,
+	"4060858d-f05e-4520-9d65-a9b28ebef823");
+INSERT INTO O_OIDA
+	VALUES ("e2aad538-9e0e-4f9d-ae10-749ad83dd059",
+	"4060858d-f05e-4520-9d65-a9b28ebef823",
+	0,
+	'menuItemId');
+INSERT INTO O_ID
+	VALUES (1,
+	"4060858d-f05e-4520-9d65-a9b28ebef823");
+INSERT INTO O_ID
+	VALUES (2,
+	"4060858d-f05e-4520-9d65-a9b28ebef823");
+INSERT INTO PE_PE
+	VALUES ("4060858d-f05e-4520-9d65-a9b28ebef823",
+	1,
+	"7266bcbd-d6fb-4a62-b1ba-18329169d19d",
+	"00000000-0000-0000-0000-000000000000",
+	4);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("7266bcbd-d6fb-4a62-b1ba-18329169d19d",
+	"00000000-0000-0000-0000-000000000000",
+	"ec99c19e-f138-4399-a783-5c123c46d456",
+	'Classes',
+	'',
+	0,
+	'../Classes.xtuml');

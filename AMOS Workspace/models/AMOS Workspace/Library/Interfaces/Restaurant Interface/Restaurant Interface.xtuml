@@ -1,0 +1,100 @@
+-- BP 7.1.6 content: Interface syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO C_I
+	VALUES ("22a1e6dd-4fed-430c-b308-3f0a977fe368",
+	"00000000-0000-0000-0000-000000000000",
+	'Restaurant Interface',
+	'');
+INSERT INTO C_EP
+	VALUES ("063ea6aa-a0c7-4c18-88b0-235edea35a2c",
+	"22a1e6dd-4fed-430c-b308-3f0a977fe368",
+	0,
+	'displayTableLayout',
+	'',
+	1);
+INSERT INTO C_AS
+	VALUES ("063ea6aa-a0c7-4c18-88b0-235edea35a2c",
+	'displayTableLayout',
+	'',
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_PP
+	VALUES ("507a6bac-1054-4dfd-b583-29e67a3047bd",
+	"063ea6aa-a0c7-4c18-88b0-235edea35a2c",
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'tableNumber',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_PP
+	VALUES ("e2f6f8eb-82cc-4acf-9282-ee4734ad6ba2",
+	"063ea6aa-a0c7-4c18-88b0-235edea35a2c",
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'table.current_state',
+	'',
+	0,
+	'',
+	"507a6bac-1054-4dfd-b583-29e67a3047bd");
+INSERT INTO C_EP
+	VALUES ("56933a32-0ce3-41c0-8124-664764b63a22",
+	"22a1e6dd-4fed-430c-b308-3f0a977fe368",
+	0,
+	'selectTable',
+	'',
+	2);
+INSERT INTO C_AS
+	VALUES ("56933a32-0ce3-41c0-8124-664764b63a22",
+	'selectTable',
+	'',
+	1,
+	"063ea6aa-a0c7-4c18-88b0-235edea35a2c");
+INSERT INTO C_PP
+	VALUES ("7dcc6563-c5e1-42f3-b963-747f3cfa8d9a",
+	"56933a32-0ce3-41c0-8124-664764b63a22",
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'tableNumber',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_EP
+	VALUES ("693b6e96-496b-421a-8c89-fc9749aa4370",
+	"22a1e6dd-4fed-430c-b308-3f0a977fe368",
+	0,
+	'openingTime',
+	'',
+	3);
+INSERT INTO C_AS
+	VALUES ("693b6e96-496b-421a-8c89-fc9749aa4370",
+	'openingTime',
+	'',
+	1,
+	"56933a32-0ce3-41c0-8124-664764b63a22");
+INSERT INTO C_EP
+	VALUES ("869b8af9-4f15-48d6-83a3-6cc9de4a11eb",
+	"22a1e6dd-4fed-430c-b308-3f0a977fe368",
+	0,
+	'closingTime',
+	'',
+	4);
+INSERT INTO C_AS
+	VALUES ("869b8af9-4f15-48d6-83a3-6cc9de4a11eb",
+	'closingTime',
+	'',
+	1,
+	"693b6e96-496b-421a-8c89-fc9749aa4370");
+INSERT INTO PE_PE
+	VALUES ("22a1e6dd-4fed-430c-b308-3f0a977fe368",
+	1,
+	"9d118cb9-a5c8-4f2d-85ef-7b5412a0f641",
+	"00000000-0000-0000-0000-000000000000",
+	6);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("9d118cb9-a5c8-4f2d-85ef-7b5412a0f641",
+	"00000000-0000-0000-0000-000000000000",
+	"ec99c19e-f138-4399-a783-5c123c46d456",
+	'Interfaces',
+	'',
+	0,
+	'../Interfaces.xtuml');

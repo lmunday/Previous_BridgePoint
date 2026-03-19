@@ -1,0 +1,1522 @@
+-- BP 7.1.6 content: Component syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO C_C
+	VALUES ("f5f6363a-b072-4585-aa21-d9c9bb95a1be",
+	"00000000-0000-0000-0000-000000000000",
+	"00000000-0000-0000-0000-000000000000",
+	'Restaurant',
+	'',
+	0,
+	"00000000-0000-0000-0000-000000000000",
+	0,
+	'',
+	'');
+INSERT INTO GD_MD
+	VALUES ("04c8a2c9-c817-401a-9ee6-08bba015ddd8",
+	111,
+	"f5f6363a-b072-4585-aa21-d9c9bb95a1be",
+	98,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	'4.1.17',
+	'AMOS Workspace::Components::Component Diagram::Restaurant');
+INSERT INTO GD_GE
+	VALUES ("3359f848-9841-4d01-a5f2-8b5521323792",
+	"04c8a2c9-c817-401a-9ee6-08bba015ddd8",
+	"f5f6363a-b072-4585-aa21-d9c9bb95a1be",
+	103,
+	0,
+	'AMOS Workspace::Components::Component Diagram::Restaurant');
+INSERT INTO GD_SHP
+	VALUES ("3359f848-9841-4d01-a5f2-8b5521323792");
+INSERT INTO GD_CTR
+	VALUES ("3359f848-9841-4d01-a5f2-8b5521323792");
+INSERT INTO DIM_ND
+	VALUES (903.000000,
+	323.000000,
+	"3359f848-9841-4d01-a5f2-8b5521323792");
+INSERT INTO DIM_GE
+	VALUES (4100.000000,
+	3100.000000,
+	"3359f848-9841-4d01-a5f2-8b5521323792",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("3359f848-9841-4d01-a5f2-8b5521323792",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_CON
+	VALUES ("a6518cad-42fa-4d94-82b7-8d145aec5440",
+	5003.000000,
+	3276.000000,
+	"3359f848-9841-4d01-a5f2-8b5521323792");
+INSERT INTO DIM_CON
+	VALUES ("840f2a81-5dae-4689-b5d3-bbbd309be02c",
+	4200.000000,
+	3423.000000,
+	"3359f848-9841-4d01-a5f2-8b5521323792");
+INSERT INTO DIM_CON
+	VALUES ("adbf8b5c-1de4-4a96-92e0-3b1260f6ef26",
+	4566.000000,
+	3423.000000,
+	"3359f848-9841-4d01-a5f2-8b5521323792");
+INSERT INTO DIM_CON
+	VALUES ("7ec7368a-8a07-4ef0-bab7-9f5dcac4059a",
+	4932.000000,
+	3423.000000,
+	"3359f848-9841-4d01-a5f2-8b5521323792");
+INSERT INTO DIM_CON
+	VALUES ("2800474e-f73c-495c-92a8-ec410cc6bff5",
+	4100.000000,
+	3252.000000,
+	"3359f848-9841-4d01-a5f2-8b5521323792");
+INSERT INTO GD_GE
+	VALUES ("769092e8-55bd-4ba7-be8a-47e8a7695f5a",
+	"04c8a2c9-c817-401a-9ee6-08bba015ddd8",
+	"7266bcbd-d6fb-4a62-b1ba-18329169d19d",
+	108,
+	0,
+	'AMOS Workspace::Components::Component Diagram::Restaurant::Classes');
+INSERT INTO GD_SHP
+	VALUES ("769092e8-55bd-4ba7-be8a-47e8a7695f5a");
+INSERT INTO GD_NCS
+	VALUES ("769092e8-55bd-4ba7-be8a-47e8a7695f5a");
+INSERT INTO DIM_ND
+	VALUES (200.000000,
+	150.000000,
+	"769092e8-55bd-4ba7-be8a-47e8a7695f5a");
+INSERT INTO DIM_GE
+	VALUES (4791.000000,
+	3100.000000,
+	"769092e8-55bd-4ba7-be8a-47e8a7695f5a",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("769092e8-55bd-4ba7-be8a-47e8a7695f5a",
+	0,
+	"3359f848-9841-4d01-a5f2-8b5521323792");
+INSERT INTO GD_GE
+	VALUES ("79cc9f38-f355-482d-b6b7-13e2fd2ad8e8",
+	"04c8a2c9-c817-401a-9ee6-08bba015ddd8",
+	"7e3a849e-7cdd-4be5-aa71-74bb8077af0b",
+	93,
+	0,
+	'AMOS Workspace::Components::Component Diagram::Restaurant::Message Port::Messaging System Interface');
+INSERT INTO GD_CON
+	VALUES ("79cc9f38-f355-482d-b6b7-13e2fd2ad8e8",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_CTXT
+	VALUES ("ef12009e-3551-4bd1-8461-3f3887dac878",
+	"79cc9f38-f355-482d-b6b7-13e2fd2ad8e8",
+	0,
+	0.000000,
+	0.000000);
+INSERT INTO DIM_ND
+	VALUES (0.000000,
+	0.000000,
+	"ef12009e-3551-4bd1-8461-3f3887dac878");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"ef12009e-3551-4bd1-8461-3f3887dac878",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("ef12009e-3551-4bd1-8461-3f3887dac878",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_CTXT
+	VALUES ("5f0f9faf-90d6-41e6-9b2d-49f42513fb89",
+	"79cc9f38-f355-482d-b6b7-13e2fd2ad8e8",
+	2,
+	0.000000,
+	0.000000);
+INSERT INTO DIM_ND
+	VALUES (0.000000,
+	0.000000,
+	"5f0f9faf-90d6-41e6-9b2d-49f42513fb89");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"5f0f9faf-90d6-41e6-9b2d-49f42513fb89",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("5f0f9faf-90d6-41e6-9b2d-49f42513fb89",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_CTXT
+	VALUES ("ca2602db-b382-49f8-b6b1-01147867cf5d",
+	"79cc9f38-f355-482d-b6b7-13e2fd2ad8e8",
+	1,
+	0.000000,
+	0.000000);
+INSERT INTO DIM_ND
+	VALUES (0.000000,
+	0.000000,
+	"ca2602db-b382-49f8-b6b1-01147867cf5d");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"ca2602db-b382-49f8-b6b1-01147867cf5d",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("ca2602db-b382-49f8-b6b1-01147867cf5d",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_LS
+	VALUES ("131d66f5-67b9-4fd4-8bce-85421f3970ca",
+	"79cc9f38-f355-482d-b6b7-13e2fd2ad8e8",
+	"00000000-0000-0000-0000-000000000000",
+	"6ac390b0-88f5-426f-a12c-77819a3ab030",
+	"443e5dad-f7d8-452d-a9e5-0cb68efb5ceb");
+INSERT INTO DIM_WAY
+	VALUES ("6ac390b0-88f5-426f-a12c-77819a3ab030",
+	5003.000000,
+	3276.000000,
+	"79cc9f38-f355-482d-b6b7-13e2fd2ad8e8",
+	"00000000-0000-0000-0000-000000000000",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_WAY
+	VALUES ("443e5dad-f7d8-452d-a9e5-0cb68efb5ceb",
+	5078.000000,
+	3276.000000,
+	"79cc9f38-f355-482d-b6b7-13e2fd2ad8e8",
+	"00000000-0000-0000-0000-000000000000",
+	"6ac390b0-88f5-426f-a12c-77819a3ab030");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"79cc9f38-f355-482d-b6b7-13e2fd2ad8e8",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("79cc9f38-f355-482d-b6b7-13e2fd2ad8e8",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ED
+	VALUES ("a6518cad-42fa-4d94-82b7-8d145aec5440",
+	"00000000-0000-0000-0000-000000000000",
+	"79cc9f38-f355-482d-b6b7-13e2fd2ad8e8");
+INSERT INTO GD_GE
+	VALUES ("7f1c2201-b9d8-4cb5-be86-0137e8f72955",
+	"04c8a2c9-c817-401a-9ee6-08bba015ddd8",
+	"ebfea40b-f270-471f-a97a-353ff4907d80",
+	93,
+	0,
+	'AMOS Workspace::Components::Component Diagram::Restaurant::Kitchen Port::Kitchen Interface');
+INSERT INTO GD_CON
+	VALUES ("7f1c2201-b9d8-4cb5-be86-0137e8f72955",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_CTXT
+	VALUES ("644ec327-10b2-46a4-bf34-765191cee429",
+	"7f1c2201-b9d8-4cb5-be86-0137e8f72955",
+	0,
+	0.000000,
+	0.000000);
+INSERT INTO DIM_ND
+	VALUES (0.000000,
+	0.000000,
+	"644ec327-10b2-46a4-bf34-765191cee429");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"644ec327-10b2-46a4-bf34-765191cee429",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("644ec327-10b2-46a4-bf34-765191cee429",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_CTXT
+	VALUES ("ce8d1ac3-d6fd-47ef-b8d6-df9f6dc9101a",
+	"7f1c2201-b9d8-4cb5-be86-0137e8f72955",
+	2,
+	0.000000,
+	0.000000);
+INSERT INTO DIM_ND
+	VALUES (0.000000,
+	0.000000,
+	"ce8d1ac3-d6fd-47ef-b8d6-df9f6dc9101a");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"ce8d1ac3-d6fd-47ef-b8d6-df9f6dc9101a",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("ce8d1ac3-d6fd-47ef-b8d6-df9f6dc9101a",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_CTXT
+	VALUES ("92eb12df-a64f-497e-9c96-c11e51acafea",
+	"7f1c2201-b9d8-4cb5-be86-0137e8f72955",
+	1,
+	0.000000,
+	0.000000);
+INSERT INTO DIM_ND
+	VALUES (0.000000,
+	0.000000,
+	"92eb12df-a64f-497e-9c96-c11e51acafea");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"92eb12df-a64f-497e-9c96-c11e51acafea",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("92eb12df-a64f-497e-9c96-c11e51acafea",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_LS
+	VALUES ("29ad7a93-6f0d-412d-84f4-9f3aa05cdb69",
+	"7f1c2201-b9d8-4cb5-be86-0137e8f72955",
+	"00000000-0000-0000-0000-000000000000",
+	"a880c731-287f-41bc-a7a2-489e66e7b05b",
+	"18d957a0-0321-4d63-a932-772b769f4387");
+INSERT INTO DIM_WAY
+	VALUES ("a880c731-287f-41bc-a7a2-489e66e7b05b",
+	4200.000000,
+	3423.000000,
+	"7f1c2201-b9d8-4cb5-be86-0137e8f72955",
+	"00000000-0000-0000-0000-000000000000",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_WAY
+	VALUES ("18d957a0-0321-4d63-a932-772b769f4387",
+	4201.000000,
+	3492.000000,
+	"7f1c2201-b9d8-4cb5-be86-0137e8f72955",
+	"00000000-0000-0000-0000-000000000000",
+	"a880c731-287f-41bc-a7a2-489e66e7b05b");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"7f1c2201-b9d8-4cb5-be86-0137e8f72955",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("7f1c2201-b9d8-4cb5-be86-0137e8f72955",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ED
+	VALUES ("840f2a81-5dae-4689-b5d3-bbbd309be02c",
+	"00000000-0000-0000-0000-000000000000",
+	"7f1c2201-b9d8-4cb5-be86-0137e8f72955");
+INSERT INTO GD_GE
+	VALUES ("486cc999-2b2b-4f4c-a3fd-e66ded4e4a5e",
+	"04c8a2c9-c817-401a-9ee6-08bba015ddd8",
+	"8adb059a-f6d2-4673-b16e-a3c0bfd931db",
+	93,
+	0,
+	'AMOS Workspace::Components::Component Diagram::Restaurant::Restaurant Port::Restaurant Interface');
+INSERT INTO GD_CON
+	VALUES ("486cc999-2b2b-4f4c-a3fd-e66ded4e4a5e",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_CTXT
+	VALUES ("f0fcc5f3-8c52-4c00-a049-24558e3aa333",
+	"486cc999-2b2b-4f4c-a3fd-e66ded4e4a5e",
+	0,
+	0.000000,
+	0.000000);
+INSERT INTO DIM_ND
+	VALUES (0.000000,
+	0.000000,
+	"f0fcc5f3-8c52-4c00-a049-24558e3aa333");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"f0fcc5f3-8c52-4c00-a049-24558e3aa333",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("f0fcc5f3-8c52-4c00-a049-24558e3aa333",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_CTXT
+	VALUES ("16902e84-89a9-454d-bfd7-e0b3a5856ee0",
+	"486cc999-2b2b-4f4c-a3fd-e66ded4e4a5e",
+	2,
+	0.000000,
+	0.000000);
+INSERT INTO DIM_ND
+	VALUES (0.000000,
+	0.000000,
+	"16902e84-89a9-454d-bfd7-e0b3a5856ee0");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"16902e84-89a9-454d-bfd7-e0b3a5856ee0",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("16902e84-89a9-454d-bfd7-e0b3a5856ee0",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_CTXT
+	VALUES ("25fa5ffd-a742-4c53-b2f5-bfed076b0a75",
+	"486cc999-2b2b-4f4c-a3fd-e66ded4e4a5e",
+	1,
+	0.000000,
+	0.000000);
+INSERT INTO DIM_ND
+	VALUES (0.000000,
+	0.000000,
+	"25fa5ffd-a742-4c53-b2f5-bfed076b0a75");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"25fa5ffd-a742-4c53-b2f5-bfed076b0a75",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("25fa5ffd-a742-4c53-b2f5-bfed076b0a75",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_LS
+	VALUES ("f42f7b43-2efd-4b01-a600-c878ba94210c",
+	"486cc999-2b2b-4f4c-a3fd-e66ded4e4a5e",
+	"00000000-0000-0000-0000-000000000000",
+	"83ede2bd-0ede-4514-9b32-793d54d19bcb",
+	"be4639f1-1784-4e6a-b723-9ce1b21d8653");
+INSERT INTO DIM_WAY
+	VALUES ("83ede2bd-0ede-4514-9b32-793d54d19bcb",
+	4566.000000,
+	3423.000000,
+	"486cc999-2b2b-4f4c-a3fd-e66ded4e4a5e",
+	"00000000-0000-0000-0000-000000000000",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_WAY
+	VALUES ("be4639f1-1784-4e6a-b723-9ce1b21d8653",
+	4564.000000,
+	3492.000000,
+	"486cc999-2b2b-4f4c-a3fd-e66ded4e4a5e",
+	"00000000-0000-0000-0000-000000000000",
+	"83ede2bd-0ede-4514-9b32-793d54d19bcb");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"486cc999-2b2b-4f4c-a3fd-e66ded4e4a5e",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("486cc999-2b2b-4f4c-a3fd-e66ded4e4a5e",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ED
+	VALUES ("adbf8b5c-1de4-4a96-92e0-3b1260f6ef26",
+	"00000000-0000-0000-0000-000000000000",
+	"486cc999-2b2b-4f4c-a3fd-e66ded4e4a5e");
+INSERT INTO GD_GE
+	VALUES ("b0c2a7ff-4546-472a-95dc-3056581705d1",
+	"04c8a2c9-c817-401a-9ee6-08bba015ddd8",
+	"891e739a-3fb8-4673-8f49-4e29115a16a5",
+	93,
+	0,
+	'AMOS Workspace::Components::Component Diagram::Restaurant::Table Port::Table Interface');
+INSERT INTO GD_CON
+	VALUES ("b0c2a7ff-4546-472a-95dc-3056581705d1",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_CTXT
+	VALUES ("a2f9b412-f1b3-4d99-afdd-eaed98aa7989",
+	"b0c2a7ff-4546-472a-95dc-3056581705d1",
+	0,
+	0.000000,
+	0.000000);
+INSERT INTO DIM_ND
+	VALUES (0.000000,
+	0.000000,
+	"a2f9b412-f1b3-4d99-afdd-eaed98aa7989");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"a2f9b412-f1b3-4d99-afdd-eaed98aa7989",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("a2f9b412-f1b3-4d99-afdd-eaed98aa7989",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_CTXT
+	VALUES ("a49b90b4-fff9-4eb9-8688-bdb8f385a09a",
+	"b0c2a7ff-4546-472a-95dc-3056581705d1",
+	2,
+	0.000000,
+	0.000000);
+INSERT INTO DIM_ND
+	VALUES (0.000000,
+	0.000000,
+	"a49b90b4-fff9-4eb9-8688-bdb8f385a09a");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"a49b90b4-fff9-4eb9-8688-bdb8f385a09a",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("a49b90b4-fff9-4eb9-8688-bdb8f385a09a",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_CTXT
+	VALUES ("13a3f091-161f-420d-a506-33e548b4de56",
+	"b0c2a7ff-4546-472a-95dc-3056581705d1",
+	1,
+	0.000000,
+	0.000000);
+INSERT INTO DIM_ND
+	VALUES (0.000000,
+	0.000000,
+	"13a3f091-161f-420d-a506-33e548b4de56");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"13a3f091-161f-420d-a506-33e548b4de56",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("13a3f091-161f-420d-a506-33e548b4de56",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_LS
+	VALUES ("69e4ea0e-605f-4dfc-99b5-bf192ed67449",
+	"b0c2a7ff-4546-472a-95dc-3056581705d1",
+	"00000000-0000-0000-0000-000000000000",
+	"6918821d-9d6b-4892-a4c6-6b7cafa0a491",
+	"385fdbc2-a8ed-42af-beba-59003907294e");
+INSERT INTO DIM_WAY
+	VALUES ("6918821d-9d6b-4892-a4c6-6b7cafa0a491",
+	4932.000000,
+	3423.000000,
+	"b0c2a7ff-4546-472a-95dc-3056581705d1",
+	"00000000-0000-0000-0000-000000000000",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_WAY
+	VALUES ("385fdbc2-a8ed-42af-beba-59003907294e",
+	4932.000000,
+	3492.000000,
+	"b0c2a7ff-4546-472a-95dc-3056581705d1",
+	"00000000-0000-0000-0000-000000000000",
+	"6918821d-9d6b-4892-a4c6-6b7cafa0a491");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"b0c2a7ff-4546-472a-95dc-3056581705d1",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("b0c2a7ff-4546-472a-95dc-3056581705d1",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ED
+	VALUES ("7ec7368a-8a07-4ef0-bab7-9f5dcac4059a",
+	"00000000-0000-0000-0000-000000000000",
+	"b0c2a7ff-4546-472a-95dc-3056581705d1");
+INSERT INTO GD_GE
+	VALUES ("2c7c685c-9b98-4314-b679-91638ba02d6a",
+	"04c8a2c9-c817-401a-9ee6-08bba015ddd8",
+	"e0c6ef22-5da6-44e1-b9fb-e7081004e5cd",
+	93,
+	0,
+	'AMOS Workspace::Components::Component Diagram::Restaurant::Payment Port::Payment System Interface');
+INSERT INTO GD_CON
+	VALUES ("2c7c685c-9b98-4314-b679-91638ba02d6a",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_CTXT
+	VALUES ("cf9252b8-b851-4495-8b1c-35a2c9eec86d",
+	"2c7c685c-9b98-4314-b679-91638ba02d6a",
+	0,
+	0.000000,
+	0.000000);
+INSERT INTO DIM_ND
+	VALUES (0.000000,
+	0.000000,
+	"cf9252b8-b851-4495-8b1c-35a2c9eec86d");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"cf9252b8-b851-4495-8b1c-35a2c9eec86d",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("cf9252b8-b851-4495-8b1c-35a2c9eec86d",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_CTXT
+	VALUES ("87545065-0802-4047-98c5-a4ff326eda6e",
+	"2c7c685c-9b98-4314-b679-91638ba02d6a",
+	2,
+	0.000000,
+	0.000000);
+INSERT INTO DIM_ND
+	VALUES (0.000000,
+	0.000000,
+	"87545065-0802-4047-98c5-a4ff326eda6e");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"87545065-0802-4047-98c5-a4ff326eda6e",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("87545065-0802-4047-98c5-a4ff326eda6e",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_CTXT
+	VALUES ("2307df3e-79ff-4d41-9c71-4ff94b172a6f",
+	"2c7c685c-9b98-4314-b679-91638ba02d6a",
+	1,
+	0.000000,
+	0.000000);
+INSERT INTO DIM_ND
+	VALUES (0.000000,
+	0.000000,
+	"2307df3e-79ff-4d41-9c71-4ff94b172a6f");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"2307df3e-79ff-4d41-9c71-4ff94b172a6f",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("2307df3e-79ff-4d41-9c71-4ff94b172a6f",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_LS
+	VALUES ("406f2fa6-86d9-40eb-8e3b-96833dc51c8d",
+	"2c7c685c-9b98-4314-b679-91638ba02d6a",
+	"00000000-0000-0000-0000-000000000000",
+	"26d70975-0731-44a1-953c-1245e8ca447f",
+	"aeb22113-ea32-4417-8201-6da8f88231c0");
+INSERT INTO DIM_WAY
+	VALUES ("26d70975-0731-44a1-953c-1245e8ca447f",
+	4100.000000,
+	3252.000000,
+	"2c7c685c-9b98-4314-b679-91638ba02d6a",
+	"00000000-0000-0000-0000-000000000000",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_WAY
+	VALUES ("aeb22113-ea32-4417-8201-6da8f88231c0",
+	4025.000000,
+	3252.000000,
+	"2c7c685c-9b98-4314-b679-91638ba02d6a",
+	"00000000-0000-0000-0000-000000000000",
+	"26d70975-0731-44a1-953c-1245e8ca447f");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"2c7c685c-9b98-4314-b679-91638ba02d6a",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("2c7c685c-9b98-4314-b679-91638ba02d6a",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ED
+	VALUES ("2800474e-f73c-495c-92a8-ec410cc6bff5",
+	"00000000-0000-0000-0000-000000000000",
+	"2c7c685c-9b98-4314-b679-91638ba02d6a");
+INSERT INTO DIM_DIA
+	VALUES ("04c8a2c9-c817-401a-9ee6-08bba015ddd8",
+	'',
+	0.000000,
+	0.000000,
+	0.000000,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_PO
+	VALUES ("f81fe186-3a87-499f-a34f-ce095c418144",
+	"f5f6363a-b072-4585-aa21-d9c9bb95a1be",
+	'Message Port',
+	0,
+	0,
+	'');
+INSERT INTO C_IR
+	VALUES ("7e3a849e-7cdd-4be5-aa71-74bb8077af0b",
+	"bcf455bb-2bdb-4496-b8c5-ad4ad6c6e464",
+	"00000000-0000-0000-0000-000000000000",
+	"f81fe186-3a87-499f-a34f-ce095c418144");
+INSERT INTO C_R
+	VALUES ("7e3a849e-7cdd-4be5-aa71-74bb8077af0b",
+	'Messaging System Interface',
+	'',
+	'Unnamed Interface',
+	'Restaurant::Message Port::Messaging System Interface');
+INSERT INTO SPR_REP
+	VALUES ("64284049-f730-45a7-a4e8-e44352d66031",
+	"00000000-0000-0000-0000-000000000000",
+	"7e3a849e-7cdd-4be5-aa71-74bb8077af0b");
+INSERT INTO SPR_RS
+	VALUES ("64284049-f730-45a7-a4e8-e44352d66031",
+	'printMessage',
+	'',
+	'',
+	3,
+	0,
+	1);
+INSERT INTO SPR_REP
+	VALUES ("e5e6e9d4-61fc-402f-9d57-c9ab4b6f26c6",
+	"00000000-0000-0000-0000-000000000000",
+	"7e3a849e-7cdd-4be5-aa71-74bb8077af0b");
+INSERT INTO SPR_RS
+	VALUES ("e5e6e9d4-61fc-402f-9d57-c9ab4b6f26c6",
+	'emailMessage',
+	'',
+	'',
+	3,
+	0,
+	2);
+INSERT INTO SPR_REP
+	VALUES ("76c173c3-68c8-4fc7-ba9f-73c28434666e",
+	"00000000-0000-0000-0000-000000000000",
+	"7e3a849e-7cdd-4be5-aa71-74bb8077af0b");
+INSERT INTO SPR_RS
+	VALUES ("76c173c3-68c8-4fc7-ba9f-73c28434666e",
+	'textMessage',
+	'',
+	'',
+	3,
+	0,
+	3);
+INSERT INTO SPR_REP
+	VALUES ("bd3f5406-ab7e-42df-b5b9-3e7bacbfdea7",
+	"7235944a-0827-4f53-803d-bf044eecaf0b",
+	"7e3a849e-7cdd-4be5-aa71-74bb8077af0b");
+INSERT INTO SPR_RS
+	VALUES ("bd3f5406-ab7e-42df-b5b9-3e7bacbfdea7",
+	'printMessage',
+	'',
+	'',
+	3,
+	0,
+	1);
+INSERT INTO C_EP_PROXY
+	VALUES ("7235944a-0827-4f53-803d-bf044eecaf0b",
+	"bcf455bb-2bdb-4496-b8c5-ad4ad6c6e464",
+	0,
+	'printMessage',
+	'',
+	1,
+	'../../../Library/Interfaces/Messaging System Interface/Messaging System Interface.xtuml');
+INSERT INTO SPR_REP
+	VALUES ("b4d96cbd-b418-435d-ae1b-cb9748160b82",
+	"4ba80429-1cec-4e44-8e4a-6ad88c3c3e44",
+	"7e3a849e-7cdd-4be5-aa71-74bb8077af0b");
+INSERT INTO SPR_RS
+	VALUES ("b4d96cbd-b418-435d-ae1b-cb9748160b82",
+	'emailMessage',
+	'',
+	'',
+	3,
+	0,
+	2);
+INSERT INTO C_EP_PROXY
+	VALUES ("4ba80429-1cec-4e44-8e4a-6ad88c3c3e44",
+	"bcf455bb-2bdb-4496-b8c5-ad4ad6c6e464",
+	0,
+	'emailMessage',
+	'',
+	2,
+	'../../../Library/Interfaces/Messaging System Interface/Messaging System Interface.xtuml');
+INSERT INTO SPR_REP
+	VALUES ("dc434d87-1f5d-452d-9413-ae21ce42c55b",
+	"388fbea9-d719-4189-baeb-3d8802da6962",
+	"7e3a849e-7cdd-4be5-aa71-74bb8077af0b");
+INSERT INTO SPR_RS
+	VALUES ("dc434d87-1f5d-452d-9413-ae21ce42c55b",
+	'textMessage',
+	'',
+	'',
+	3,
+	0,
+	3);
+INSERT INTO C_EP_PROXY
+	VALUES ("388fbea9-d719-4189-baeb-3d8802da6962",
+	"bcf455bb-2bdb-4496-b8c5-ad4ad6c6e464",
+	0,
+	'textMessage',
+	'',
+	3,
+	'../../../Library/Interfaces/Messaging System Interface/Messaging System Interface.xtuml');
+INSERT INTO C_I_PROXY
+	VALUES ("bcf455bb-2bdb-4496-b8c5-ad4ad6c6e464",
+	"00000000-0000-0000-0000-000000000000",
+	'Messaging System Interface',
+	'',
+	'../../../Library/Interfaces/Messaging System Interface/Messaging System Interface.xtuml');
+INSERT INTO C_PO
+	VALUES ("64eb3dfc-da24-42e0-98f5-b127e2fdbe25",
+	"f5f6363a-b072-4585-aa21-d9c9bb95a1be",
+	'Kitchen Port',
+	0,
+	0,
+	'');
+INSERT INTO C_IR
+	VALUES ("ebfea40b-f270-471f-a97a-353ff4907d80",
+	"8228127c-9b6b-4b60-adf5-6e3ebea526dc",
+	"00000000-0000-0000-0000-000000000000",
+	"64eb3dfc-da24-42e0-98f5-b127e2fdbe25");
+INSERT INTO C_R
+	VALUES ("ebfea40b-f270-471f-a97a-353ff4907d80",
+	'Kitchen Interface',
+	'',
+	'Unnamed Interface',
+	'Restaurant::Kitchen Port::Kitchen Interface');
+INSERT INTO SPR_REP
+	VALUES ("535ae874-a49e-4a88-a056-9167192104a7",
+	"00000000-0000-0000-0000-000000000000",
+	"ebfea40b-f270-471f-a97a-353ff4907d80");
+INSERT INTO SPR_RS
+	VALUES ("535ae874-a49e-4a88-a056-9167192104a7",
+	'preparedOrderedFood',
+	'',
+	'',
+	3,
+	0,
+	2);
+INSERT INTO SPR_REP
+	VALUES ("4cc2845d-66e7-4be9-a88a-45470bd030d5",
+	"00000000-0000-0000-0000-000000000000",
+	"ebfea40b-f270-471f-a97a-353ff4907d80");
+INSERT INTO SPR_RS
+	VALUES ("4cc2845d-66e7-4be9-a88a-45470bd030d5",
+	'displayOrderedFood',
+	'',
+	'',
+	3,
+	0,
+	1);
+INSERT INTO SPR_REP
+	VALUES ("1c9677bf-2d0b-4aab-a8ce-5c7f33ff2ab1",
+	"e9ae0ce5-3c8f-498c-be80-f9f99909278a",
+	"ebfea40b-f270-471f-a97a-353ff4907d80");
+INSERT INTO SPR_RS
+	VALUES ("1c9677bf-2d0b-4aab-a8ce-5c7f33ff2ab1",
+	'preparedOrderedFood',
+	'',
+	'',
+	3,
+	0,
+	2);
+INSERT INTO C_EP_PROXY
+	VALUES ("e9ae0ce5-3c8f-498c-be80-f9f99909278a",
+	"8228127c-9b6b-4b60-adf5-6e3ebea526dc",
+	0,
+	'preparedOrderedFood',
+	'',
+	2,
+	'../../../Library/Interfaces/Kitchen Interface/Kitchen Interface.xtuml');
+INSERT INTO SPR_REP
+	VALUES ("daa375d3-40cb-4491-bd90-6b6e164927fc",
+	"53880222-ed39-497a-9279-7048f24c6b0c",
+	"ebfea40b-f270-471f-a97a-353ff4907d80");
+INSERT INTO SPR_RS
+	VALUES ("daa375d3-40cb-4491-bd90-6b6e164927fc",
+	'displayOrderedFood',
+	'',
+	'',
+	3,
+	0,
+	1);
+INSERT INTO C_EP_PROXY
+	VALUES ("53880222-ed39-497a-9279-7048f24c6b0c",
+	"8228127c-9b6b-4b60-adf5-6e3ebea526dc",
+	0,
+	'displayOrderedFood',
+	'',
+	1,
+	'../../../Library/Interfaces/Kitchen Interface/Kitchen Interface.xtuml');
+INSERT INTO C_I_PROXY
+	VALUES ("8228127c-9b6b-4b60-adf5-6e3ebea526dc",
+	"00000000-0000-0000-0000-000000000000",
+	'Kitchen Interface',
+	'',
+	'../../../Library/Interfaces/Kitchen Interface/Kitchen Interface.xtuml');
+INSERT INTO C_PO
+	VALUES ("c294a376-1fdc-4066-b64b-d45eaeeefd38",
+	"f5f6363a-b072-4585-aa21-d9c9bb95a1be",
+	'Restaurant Port',
+	0,
+	0,
+	'');
+INSERT INTO C_IR
+	VALUES ("8adb059a-f6d2-4673-b16e-a3c0bfd931db",
+	"22a1e6dd-4fed-430c-b308-3f0a977fe368",
+	"00000000-0000-0000-0000-000000000000",
+	"c294a376-1fdc-4066-b64b-d45eaeeefd38");
+INSERT INTO C_R
+	VALUES ("8adb059a-f6d2-4673-b16e-a3c0bfd931db",
+	'Restaurant Interface',
+	'',
+	'Unnamed Interface',
+	'Restaurant::Restaurant Port::Restaurant Interface');
+INSERT INTO SPR_REP
+	VALUES ("e6ea25dd-e09d-4c7e-b8d8-d6fbb995f3b3",
+	"00000000-0000-0000-0000-000000000000",
+	"8adb059a-f6d2-4673-b16e-a3c0bfd931db");
+INSERT INTO SPR_RS
+	VALUES ("e6ea25dd-e09d-4c7e-b8d8-d6fbb995f3b3",
+	'displayTableLayout',
+	'',
+	'',
+	3,
+	0,
+	1);
+INSERT INTO SPR_REP
+	VALUES ("51c7eb00-b661-48fd-a300-c2fb22daa4df",
+	"4bd2259a-b557-4dcf-a310-563223868a2b",
+	"8adb059a-f6d2-4673-b16e-a3c0bfd931db");
+INSERT INTO SPR_RS
+	VALUES ("51c7eb00-b661-48fd-a300-c2fb22daa4df",
+	'closingTime',
+	'',
+	'',
+	3,
+	0,
+	2);
+INSERT INTO C_EP_PROXY
+	VALUES ("4bd2259a-b557-4dcf-a310-563223868a2b",
+	"00000000-0000-0000-0000-000000000000",
+	0,
+	'closingTime',
+	'',
+	4,
+	'../../../../../Library/Interfaces/Restaurant Interface/Restaurant Interface.xtuml');
+INSERT INTO SPR_REP
+	VALUES ("16d36cc1-a87c-4231-a29e-89966f12313d",
+	"4bd2259a-b557-4dcf-a310-563223868a2b",
+	"8adb059a-f6d2-4673-b16e-a3c0bfd931db");
+INSERT INTO SPR_RS
+	VALUES ("16d36cc1-a87c-4231-a29e-89966f12313d",
+	'closingTime',
+	'',
+	'',
+	3,
+	0,
+	3);
+INSERT INTO SPR_REP
+	VALUES ("8f0879b7-6846-4039-8b7f-cd206ef42a57",
+	"4bd2259a-b557-4dcf-a310-563223868a2b",
+	"8adb059a-f6d2-4673-b16e-a3c0bfd931db");
+INSERT INTO SPR_RS
+	VALUES ("8f0879b7-6846-4039-8b7f-cd206ef42a57",
+	'closingTime',
+	'',
+	'',
+	3,
+	0,
+	4);
+INSERT INTO SPR_REP
+	VALUES ("33ab38dd-9af8-426d-a205-34a18176c863",
+	"063ea6aa-a0c7-4c18-88b0-235edea35a2c",
+	"8adb059a-f6d2-4673-b16e-a3c0bfd931db");
+INSERT INTO SPR_RS
+	VALUES ("33ab38dd-9af8-426d-a205-34a18176c863",
+	'displayTableLayout',
+	'',
+	'',
+	3,
+	0,
+	1);
+INSERT INTO C_EP_PROXY
+	VALUES ("063ea6aa-a0c7-4c18-88b0-235edea35a2c",
+	"22a1e6dd-4fed-430c-b308-3f0a977fe368",
+	0,
+	'displayTableLayout',
+	'',
+	1,
+	'../../../Library/Interfaces/Restaurant Interface/Restaurant Interface.xtuml');
+INSERT INTO SPR_REP
+	VALUES ("28881b54-113b-43ee-8b36-3024029c1722",
+	"56933a32-0ce3-41c0-8124-664764b63a22",
+	"8adb059a-f6d2-4673-b16e-a3c0bfd931db");
+INSERT INTO SPR_RS
+	VALUES ("28881b54-113b-43ee-8b36-3024029c1722",
+	'selectTable',
+	'',
+	'',
+	3,
+	0,
+	2);
+INSERT INTO C_EP_PROXY
+	VALUES ("56933a32-0ce3-41c0-8124-664764b63a22",
+	"22a1e6dd-4fed-430c-b308-3f0a977fe368",
+	0,
+	'selectTable',
+	'',
+	2,
+	'../../../Library/Interfaces/Restaurant Interface/Restaurant Interface.xtuml');
+INSERT INTO SPR_REP
+	VALUES ("3ccfdc4a-f7dd-43ed-8a54-be7d0752590a",
+	"693b6e96-496b-421a-8c89-fc9749aa4370",
+	"8adb059a-f6d2-4673-b16e-a3c0bfd931db");
+INSERT INTO SPR_RS
+	VALUES ("3ccfdc4a-f7dd-43ed-8a54-be7d0752590a",
+	'openingTime',
+	'',
+	'',
+	3,
+	0,
+	3);
+INSERT INTO C_EP_PROXY
+	VALUES ("693b6e96-496b-421a-8c89-fc9749aa4370",
+	"22a1e6dd-4fed-430c-b308-3f0a977fe368",
+	0,
+	'openingTime',
+	'',
+	3,
+	'../../../Library/Interfaces/Restaurant Interface/Restaurant Interface.xtuml');
+INSERT INTO SPR_REP
+	VALUES ("389e18c3-8391-4b64-bd33-5781f54547c7",
+	"869b8af9-4f15-48d6-83a3-6cc9de4a11eb",
+	"8adb059a-f6d2-4673-b16e-a3c0bfd931db");
+INSERT INTO SPR_RS
+	VALUES ("389e18c3-8391-4b64-bd33-5781f54547c7",
+	'closingTime',
+	'',
+	'',
+	3,
+	0,
+	4);
+INSERT INTO C_EP_PROXY
+	VALUES ("869b8af9-4f15-48d6-83a3-6cc9de4a11eb",
+	"22a1e6dd-4fed-430c-b308-3f0a977fe368",
+	0,
+	'closingTime',
+	'',
+	4,
+	'../../../Library/Interfaces/Restaurant Interface/Restaurant Interface.xtuml');
+INSERT INTO C_I_PROXY
+	VALUES ("22a1e6dd-4fed-430c-b308-3f0a977fe368",
+	"00000000-0000-0000-0000-000000000000",
+	'Restaurant Interface',
+	'',
+	'../../../Library/Interfaces/Restaurant Interface/Restaurant Interface.xtuml');
+INSERT INTO C_PO
+	VALUES ("f2347822-fdaa-4b3f-a580-83f3d99705ff",
+	"f5f6363a-b072-4585-aa21-d9c9bb95a1be",
+	'Table Port',
+	0,
+	0,
+	'');
+INSERT INTO C_IR
+	VALUES ("891e739a-3fb8-4673-8f49-4e29115a16a5",
+	"a81a63cd-72a7-485b-a6cd-ef4812b2c856",
+	"00000000-0000-0000-0000-000000000000",
+	"f2347822-fdaa-4b3f-a580-83f3d99705ff");
+INSERT INTO C_R
+	VALUES ("891e739a-3fb8-4673-8f49-4e29115a16a5",
+	'Table Interface',
+	'',
+	'Unnamed Interface',
+	'Restaurant::Table Port::Table Interface');
+INSERT INTO SPR_REP
+	VALUES ("3f45464b-d0ab-4b0b-aa14-101b4850535b",
+	"00000000-0000-0000-0000-000000000000",
+	"891e739a-3fb8-4673-8f49-4e29115a16a5");
+INSERT INTO SPR_RS
+	VALUES ("3f45464b-d0ab-4b0b-aa14-101b4850535b",
+	'displayWelcomeScreen',
+	'',
+	'',
+	3,
+	0,
+	1);
+INSERT INTO SPR_REP
+	VALUES ("c6155e03-1569-4efd-a6bf-caf521d5cfc2",
+	"4bd2259a-b557-4dcf-a310-563223868a2b",
+	"891e739a-3fb8-4673-8f49-4e29115a16a5");
+INSERT INTO SPR_RS
+	VALUES ("c6155e03-1569-4efd-a6bf-caf521d5cfc2",
+	'closingTime',
+	'',
+	'',
+	3,
+	0,
+	2);
+INSERT INTO SPR_REP
+	VALUES ("c57d8ddf-7f22-4357-acb6-51a4918f7049",
+	"00000000-0000-0000-0000-000000000000",
+	"891e739a-3fb8-4673-8f49-4e29115a16a5");
+INSERT INTO SPR_RS
+	VALUES ("c57d8ddf-7f22-4357-acb6-51a4918f7049",
+	'displayMenu',
+	'',
+	'',
+	3,
+	0,
+	3);
+INSERT INTO SPR_REP
+	VALUES ("c7872839-5aae-4399-88f2-cb2b0aef3860",
+	"00000000-0000-0000-0000-000000000000",
+	"891e739a-3fb8-4673-8f49-4e29115a16a5");
+INSERT INTO SPR_RS
+	VALUES ("c7872839-5aae-4399-88f2-cb2b0aef3860",
+	'displayOrder',
+	'',
+	'',
+	3,
+	0,
+	4);
+INSERT INTO SPR_REP
+	VALUES ("7a91a344-4f24-4ff7-b36e-cefd3ab96531",
+	"00000000-0000-0000-0000-000000000000",
+	"891e739a-3fb8-4673-8f49-4e29115a16a5");
+INSERT INTO SPR_RS
+	VALUES ("7a91a344-4f24-4ff7-b36e-cefd3ab96531",
+	'placeOrder',
+	'',
+	'',
+	3,
+	0,
+	5);
+INSERT INTO SPR_REP
+	VALUES ("20c019f8-adb4-408e-a388-6ee9bd23f719",
+	"00000000-0000-0000-0000-000000000000",
+	"891e739a-3fb8-4673-8f49-4e29115a16a5");
+INSERT INTO SPR_RS
+	VALUES ("20c019f8-adb4-408e-a388-6ee9bd23f719",
+	'requestBill',
+	'',
+	'',
+	3,
+	0,
+	6);
+INSERT INTO SPR_REP
+	VALUES ("cf219052-ccef-44fa-b1a9-d81e79cf910f",
+	"00000000-0000-0000-0000-000000000000",
+	"891e739a-3fb8-4673-8f49-4e29115a16a5");
+INSERT INTO SPR_RS
+	VALUES ("cf219052-ccef-44fa-b1a9-d81e79cf910f",
+	'requestAssistance',
+	'',
+	'',
+	3,
+	0,
+	7);
+INSERT INTO SPR_REP
+	VALUES ("2f9017e3-d773-49c9-a4ab-3a58423432ba",
+	"00000000-0000-0000-0000-000000000000",
+	"891e739a-3fb8-4673-8f49-4e29115a16a5");
+INSERT INTO SPR_RS
+	VALUES ("2f9017e3-d773-49c9-a4ab-3a58423432ba",
+	'displayBill',
+	'',
+	'',
+	3,
+	0,
+	8);
+INSERT INTO SPR_REP
+	VALUES ("7254fd1a-62ca-4b8e-bd44-76fa3fc4c5da",
+	"00000000-0000-0000-0000-000000000000",
+	"891e739a-3fb8-4673-8f49-4e29115a16a5");
+INSERT INTO SPR_RS
+	VALUES ("7254fd1a-62ca-4b8e-bd44-76fa3fc4c5da",
+	'enteredPayment',
+	'',
+	'',
+	3,
+	0,
+	9);
+INSERT INTO SPR_REP
+	VALUES ("baacd6c9-7c4f-498b-b642-80a5e8b7cc62",
+	"00000000-0000-0000-0000-000000000000",
+	"891e739a-3fb8-4673-8f49-4e29115a16a5");
+INSERT INTO SPR_RS
+	VALUES ("baacd6c9-7c4f-498b-b642-80a5e8b7cc62",
+	'copyReceipt',
+	'',
+	'',
+	3,
+	0,
+	10);
+INSERT INTO SPR_REP
+	VALUES ("bca66a9d-21bd-4025-8fe5-5ba97aa9131b",
+	"00000000-0000-0000-0000-000000000000",
+	"891e739a-3fb8-4673-8f49-4e29115a16a5");
+INSERT INTO SPR_RS
+	VALUES ("bca66a9d-21bd-4025-8fe5-5ba97aa9131b",
+	'displayReceipt',
+	'',
+	'',
+	3,
+	0,
+	11);
+INSERT INTO SPR_REP
+	VALUES ("b164e4c9-6698-4b25-bdea-c10af0b12ac6",
+	"4bd2259a-b557-4dcf-a310-563223868a2b",
+	"891e739a-3fb8-4673-8f49-4e29115a16a5");
+INSERT INTO SPR_RS
+	VALUES ("b164e4c9-6698-4b25-bdea-c10af0b12ac6",
+	'closingTime',
+	'',
+	'',
+	3,
+	0,
+	12);
+INSERT INTO SPR_REP
+	VALUES ("ef7928b8-b9a4-48c9-9e01-96c5bd819fb1",
+	"151679f4-b5d6-4ceb-86d0-346d379bd13b",
+	"891e739a-3fb8-4673-8f49-4e29115a16a5");
+INSERT INTO SPR_RS
+	VALUES ("ef7928b8-b9a4-48c9-9e01-96c5bd819fb1",
+	'displayWelcomeScreen',
+	'',
+	'',
+	3,
+	0,
+	1);
+INSERT INTO C_EP_PROXY
+	VALUES ("151679f4-b5d6-4ceb-86d0-346d379bd13b",
+	"a81a63cd-72a7-485b-a6cd-ef4812b2c856",
+	0,
+	'displayWelcomeScreen',
+	'',
+	1,
+	'../../../Library/Interfaces/Table Interface/Table Interface.xtuml');
+INSERT INTO SPR_REP
+	VALUES ("ea11e7e8-8d67-4eaa-ae32-26c7603ea281",
+	"b8799f9b-514e-4cba-a473-abdb22190238",
+	"891e739a-3fb8-4673-8f49-4e29115a16a5");
+INSERT INTO SPR_RS
+	VALUES ("ea11e7e8-8d67-4eaa-ae32-26c7603ea281",
+	'customerAssigned',
+	'',
+	'',
+	3,
+	0,
+	2);
+INSERT INTO C_EP_PROXY
+	VALUES ("b8799f9b-514e-4cba-a473-abdb22190238",
+	"a81a63cd-72a7-485b-a6cd-ef4812b2c856",
+	0,
+	'customerAssigned',
+	'',
+	2,
+	'../../../Library/Interfaces/Table Interface/Table Interface.xtuml');
+INSERT INTO SPR_REP
+	VALUES ("dba4fe4f-4118-4fb6-9626-a6942e2b5840",
+	"3d499355-f231-4166-bd86-862ff47f603d",
+	"891e739a-3fb8-4673-8f49-4e29115a16a5");
+INSERT INTO SPR_RS
+	VALUES ("dba4fe4f-4118-4fb6-9626-a6942e2b5840",
+	'displayMenu',
+	'',
+	'',
+	3,
+	0,
+	3);
+INSERT INTO C_EP_PROXY
+	VALUES ("3d499355-f231-4166-bd86-862ff47f603d",
+	"a81a63cd-72a7-485b-a6cd-ef4812b2c856",
+	0,
+	'displayMenu',
+	'',
+	3,
+	'../../../Library/Interfaces/Table Interface/Table Interface.xtuml');
+INSERT INTO SPR_REP
+	VALUES ("14ee9e4c-c87f-49b2-b29e-b6b0fffda5ed",
+	"073be095-d03b-4775-884a-55cf9f024947",
+	"891e739a-3fb8-4673-8f49-4e29115a16a5");
+INSERT INTO SPR_RS
+	VALUES ("14ee9e4c-c87f-49b2-b29e-b6b0fffda5ed",
+	'displayOrder',
+	'',
+	'',
+	3,
+	0,
+	4);
+INSERT INTO C_EP_PROXY
+	VALUES ("073be095-d03b-4775-884a-55cf9f024947",
+	"a81a63cd-72a7-485b-a6cd-ef4812b2c856",
+	0,
+	'displayOrder',
+	'',
+	4,
+	'../../../Library/Interfaces/Table Interface/Table Interface.xtuml');
+INSERT INTO SPR_REP
+	VALUES ("c6381e10-e957-41ca-934c-34ea4a1802e5",
+	"5e6c7af2-eeb6-4374-88bb-5242f434c222",
+	"891e739a-3fb8-4673-8f49-4e29115a16a5");
+INSERT INTO SPR_RS
+	VALUES ("c6381e10-e957-41ca-934c-34ea4a1802e5",
+	'placeOrder',
+	'',
+	'',
+	3,
+	0,
+	5);
+INSERT INTO C_EP_PROXY
+	VALUES ("5e6c7af2-eeb6-4374-88bb-5242f434c222",
+	"a81a63cd-72a7-485b-a6cd-ef4812b2c856",
+	0,
+	'placeOrder',
+	'',
+	5,
+	'../../../Library/Interfaces/Table Interface/Table Interface.xtuml');
+INSERT INTO SPR_REP
+	VALUES ("97b9f856-2a16-499b-88b8-5475a48faa71",
+	"d2b22af5-4d42-433b-874f-475fd1156742",
+	"891e739a-3fb8-4673-8f49-4e29115a16a5");
+INSERT INTO SPR_RS
+	VALUES ("97b9f856-2a16-499b-88b8-5475a48faa71",
+	'requestBill',
+	'',
+	'',
+	3,
+	0,
+	6);
+INSERT INTO C_EP_PROXY
+	VALUES ("d2b22af5-4d42-433b-874f-475fd1156742",
+	"a81a63cd-72a7-485b-a6cd-ef4812b2c856",
+	0,
+	'requestBill',
+	'',
+	6,
+	'../../../Library/Interfaces/Table Interface/Table Interface.xtuml');
+INSERT INTO SPR_REP
+	VALUES ("13f1bbb6-6e34-4d37-816b-2d75d011bf1f",
+	"b46f46df-ec94-4f67-b451-1334e0c8b24b",
+	"891e739a-3fb8-4673-8f49-4e29115a16a5");
+INSERT INTO SPR_RS
+	VALUES ("13f1bbb6-6e34-4d37-816b-2d75d011bf1f",
+	'requestAssistance',
+	'',
+	'',
+	3,
+	0,
+	7);
+INSERT INTO C_EP_PROXY
+	VALUES ("b46f46df-ec94-4f67-b451-1334e0c8b24b",
+	"a81a63cd-72a7-485b-a6cd-ef4812b2c856",
+	0,
+	'requestAssistance',
+	'',
+	7,
+	'../../../Library/Interfaces/Table Interface/Table Interface.xtuml');
+INSERT INTO SPR_REP
+	VALUES ("b3050351-497a-4f02-bce5-cd098fb822a3",
+	"c0c6ca9b-6680-48c1-9b44-4ded07541e20",
+	"891e739a-3fb8-4673-8f49-4e29115a16a5");
+INSERT INTO SPR_RS
+	VALUES ("b3050351-497a-4f02-bce5-cd098fb822a3",
+	'displayBill',
+	'',
+	'',
+	3,
+	0,
+	8);
+INSERT INTO C_EP_PROXY
+	VALUES ("c0c6ca9b-6680-48c1-9b44-4ded07541e20",
+	"a81a63cd-72a7-485b-a6cd-ef4812b2c856",
+	0,
+	'displayBill',
+	'',
+	8,
+	'../../../Library/Interfaces/Table Interface/Table Interface.xtuml');
+INSERT INTO SPR_REP
+	VALUES ("1aa26788-eab1-4ca7-ad59-10da3c1c0c0b",
+	"428b3b3f-0243-4209-9b2f-6caff45c8086",
+	"891e739a-3fb8-4673-8f49-4e29115a16a5");
+INSERT INTO SPR_RS
+	VALUES ("1aa26788-eab1-4ca7-ad59-10da3c1c0c0b",
+	'enteredPayment',
+	'',
+	'',
+	3,
+	0,
+	9);
+INSERT INTO C_EP_PROXY
+	VALUES ("428b3b3f-0243-4209-9b2f-6caff45c8086",
+	"a81a63cd-72a7-485b-a6cd-ef4812b2c856",
+	0,
+	'enteredPayment',
+	'',
+	9,
+	'../../../Library/Interfaces/Table Interface/Table Interface.xtuml');
+INSERT INTO SPR_REP
+	VALUES ("31365d8a-5689-4680-af13-e892345d9e3a",
+	"45fc15f2-cfe6-4166-9b8d-2395ec1e6d1f",
+	"891e739a-3fb8-4673-8f49-4e29115a16a5");
+INSERT INTO SPR_RS
+	VALUES ("31365d8a-5689-4680-af13-e892345d9e3a",
+	'copyReceipt',
+	'',
+	'',
+	3,
+	0,
+	10);
+INSERT INTO C_EP_PROXY
+	VALUES ("45fc15f2-cfe6-4166-9b8d-2395ec1e6d1f",
+	"a81a63cd-72a7-485b-a6cd-ef4812b2c856",
+	0,
+	'copyReceipt',
+	'',
+	10,
+	'../../../Library/Interfaces/Table Interface/Table Interface.xtuml');
+INSERT INTO SPR_REP
+	VALUES ("e11fa226-084b-4ad2-b8fe-36058eef2ca9",
+	"5db4251b-2d20-42c3-9e6c-65f86572a690",
+	"891e739a-3fb8-4673-8f49-4e29115a16a5");
+INSERT INTO SPR_RS
+	VALUES ("e11fa226-084b-4ad2-b8fe-36058eef2ca9",
+	'displayReceipt',
+	'',
+	'',
+	3,
+	0,
+	11);
+INSERT INTO C_EP_PROXY
+	VALUES ("5db4251b-2d20-42c3-9e6c-65f86572a690",
+	"a81a63cd-72a7-485b-a6cd-ef4812b2c856",
+	0,
+	'displayReceipt',
+	'',
+	11,
+	'../../../Library/Interfaces/Table Interface/Table Interface.xtuml');
+INSERT INTO SPR_REP
+	VALUES ("c4bc806b-fa89-459d-9d4a-33a0972cca44",
+	"395d1f5a-d460-4817-a5c6-479632ec5e39",
+	"891e739a-3fb8-4673-8f49-4e29115a16a5");
+INSERT INTO SPR_RS
+	VALUES ("c4bc806b-fa89-459d-9d4a-33a0972cca44",
+	'makeTableAvailable',
+	'',
+	'',
+	3,
+	0,
+	12);
+INSERT INTO C_EP_PROXY
+	VALUES ("395d1f5a-d460-4817-a5c6-479632ec5e39",
+	"a81a63cd-72a7-485b-a6cd-ef4812b2c856",
+	0,
+	'makeTableAvailable',
+	'',
+	12,
+	'../../../Library/Interfaces/Table Interface/Table Interface.xtuml');
+INSERT INTO C_I_PROXY
+	VALUES ("a81a63cd-72a7-485b-a6cd-ef4812b2c856",
+	"00000000-0000-0000-0000-000000000000",
+	'Table Interface',
+	'',
+	'../../../Library/Interfaces/Table Interface/Table Interface.xtuml');
+INSERT INTO C_PO
+	VALUES ("968195ce-23ce-4b07-b840-9838d912642d",
+	"f5f6363a-b072-4585-aa21-d9c9bb95a1be",
+	'Payment Port',
+	0,
+	0,
+	'');
+INSERT INTO C_IR
+	VALUES ("e0c6ef22-5da6-44e1-b9fb-e7081004e5cd",
+	"2534551f-5799-4f56-be12-583b4ae84c95",
+	"00000000-0000-0000-0000-000000000000",
+	"968195ce-23ce-4b07-b840-9838d912642d");
+INSERT INTO C_R
+	VALUES ("e0c6ef22-5da6-44e1-b9fb-e7081004e5cd",
+	'Payment System Interface',
+	'',
+	'Unnamed Interface',
+	'Restaurant::Payment Port::Payment System Interface');
+INSERT INTO SPR_REP
+	VALUES ("62ace121-746e-4aef-b9a5-9f8e49a898f6",
+	"00000000-0000-0000-0000-000000000000",
+	"e0c6ef22-5da6-44e1-b9fb-e7081004e5cd");
+INSERT INTO SPR_RS
+	VALUES ("62ace121-746e-4aef-b9a5-9f8e49a898f6",
+	'processPayment',
+	'',
+	'',
+	3,
+	0,
+	1);
+INSERT INTO SPR_REP
+	VALUES ("0e08f46d-5aee-420f-ac58-3ab4ab80143d",
+	"00000000-0000-0000-0000-000000000000",
+	"e0c6ef22-5da6-44e1-b9fb-e7081004e5cd");
+INSERT INTO SPR_RS
+	VALUES ("0e08f46d-5aee-420f-ac58-3ab4ab80143d",
+	'paymentRejected',
+	'',
+	'',
+	3,
+	0,
+	2);
+INSERT INTO SPR_REP
+	VALUES ("b4ee70ed-9b92-41fe-899b-9b201686d259",
+	"00000000-0000-0000-0000-000000000000",
+	"e0c6ef22-5da6-44e1-b9fb-e7081004e5cd");
+INSERT INTO SPR_RS
+	VALUES ("b4ee70ed-9b92-41fe-899b-9b201686d259",
+	'paymentAccepted',
+	'',
+	'',
+	3,
+	0,
+	3);
+INSERT INTO SPR_REP
+	VALUES ("85bebccb-616c-4454-a7d7-4422bd69afde",
+	"ab0143a7-fe72-44c7-b8c6-37cd2143f323",
+	"e0c6ef22-5da6-44e1-b9fb-e7081004e5cd");
+INSERT INTO SPR_RS
+	VALUES ("85bebccb-616c-4454-a7d7-4422bd69afde",
+	'processPayment',
+	'',
+	'',
+	3,
+	0,
+	1);
+INSERT INTO C_EP_PROXY
+	VALUES ("ab0143a7-fe72-44c7-b8c6-37cd2143f323",
+	"2534551f-5799-4f56-be12-583b4ae84c95",
+	0,
+	'processPayment',
+	'',
+	1,
+	'../../../Library/Interfaces/Payment System Interface/Payment System Interface.xtuml');
+INSERT INTO SPR_REP
+	VALUES ("5fd8ee91-2c11-444d-a575-ca2767f2909c",
+	"40447b50-075c-4031-920d-4209290a0b91",
+	"e0c6ef22-5da6-44e1-b9fb-e7081004e5cd");
+INSERT INTO SPR_RS
+	VALUES ("5fd8ee91-2c11-444d-a575-ca2767f2909c",
+	'paymentRejected',
+	'',
+	'',
+	3,
+	0,
+	2);
+INSERT INTO C_EP_PROXY
+	VALUES ("40447b50-075c-4031-920d-4209290a0b91",
+	"2534551f-5799-4f56-be12-583b4ae84c95",
+	0,
+	'paymentRejected',
+	'',
+	2,
+	'../../../Library/Interfaces/Payment System Interface/Payment System Interface.xtuml');
+INSERT INTO SPR_REP
+	VALUES ("aa6104bf-61cb-4224-abfc-544969a760e0",
+	"3120e38a-fbed-4bbd-b264-77ae2cb9783f",
+	"e0c6ef22-5da6-44e1-b9fb-e7081004e5cd");
+INSERT INTO SPR_RS
+	VALUES ("aa6104bf-61cb-4224-abfc-544969a760e0",
+	'paymentAccepted',
+	'',
+	'',
+	3,
+	0,
+	3);
+INSERT INTO C_EP_PROXY
+	VALUES ("3120e38a-fbed-4bbd-b264-77ae2cb9783f",
+	"2534551f-5799-4f56-be12-583b4ae84c95",
+	0,
+	'paymentAccepted',
+	'',
+	3,
+	'../../../Library/Interfaces/Payment System Interface/Payment System Interface.xtuml');
+INSERT INTO C_I_PROXY
+	VALUES ("2534551f-5799-4f56-be12-583b4ae84c95",
+	"00000000-0000-0000-0000-000000000000",
+	'Payment System Interface',
+	'',
+	'../../../Library/Interfaces/Payment System Interface/Payment System Interface.xtuml');
+INSERT INTO PE_PE
+	VALUES ("f5f6363a-b072-4585-aa21-d9c9bb95a1be",
+	1,
+	"1317a336-1f64-4156-83a5-933eafa16f9e",
+	"00000000-0000-0000-0000-000000000000",
+	2);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("1317a336-1f64-4156-83a5-933eafa16f9e",
+	"00000000-0000-0000-0000-000000000000",
+	"ec99c19e-f138-4399-a783-5c123c46d456",
+	'Component Diagram',
+	'',
+	0,
+	'../Component Diagram.xtuml');

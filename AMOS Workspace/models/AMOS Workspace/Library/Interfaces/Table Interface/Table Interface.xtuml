@@ -1,0 +1,321 @@
+-- BP 7.1.6 content: Interface syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO C_I
+	VALUES ("a81a63cd-72a7-485b-a6cd-ef4812b2c856",
+	"00000000-0000-0000-0000-000000000000",
+	'Table Interface',
+	'');
+INSERT INTO C_EP
+	VALUES ("151679f4-b5d6-4ceb-86d0-346d379bd13b",
+	"a81a63cd-72a7-485b-a6cd-ef4812b2c856",
+	0,
+	'displayWelcomeScreen',
+	'',
+	1);
+INSERT INTO C_AS
+	VALUES ("151679f4-b5d6-4ceb-86d0-346d379bd13b",
+	'displayWelcomeScreen',
+	'',
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_PP
+	VALUES ("b5b794bd-7f2a-46de-a7ac-799656999481",
+	"151679f4-b5d6-4ceb-86d0-346d379bd13b",
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'tableNumber',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_EP
+	VALUES ("b8799f9b-514e-4cba-a473-abdb22190238",
+	"a81a63cd-72a7-485b-a6cd-ef4812b2c856",
+	0,
+	'customerAssigned',
+	'',
+	2);
+INSERT INTO C_AS
+	VALUES ("b8799f9b-514e-4cba-a473-abdb22190238",
+	'customerAssigned',
+	'',
+	1,
+	"151679f4-b5d6-4ceb-86d0-346d379bd13b");
+INSERT INTO C_PP
+	VALUES ("c3761c6f-2d80-42ef-8559-8ccb403f2ed1",
+	"b8799f9b-514e-4cba-a473-abdb22190238",
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'tableNumber',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_EP
+	VALUES ("3d499355-f231-4166-bd86-862ff47f603d",
+	"a81a63cd-72a7-485b-a6cd-ef4812b2c856",
+	0,
+	'displayMenu',
+	'',
+	3);
+INSERT INTO C_AS
+	VALUES ("3d499355-f231-4166-bd86-862ff47f603d",
+	'displayMenu',
+	'',
+	0,
+	"b8799f9b-514e-4cba-a473-abdb22190238");
+INSERT INTO C_PP
+	VALUES ("2efa1e9e-dda6-40fb-8608-c8002bc1cf69",
+	"3d499355-f231-4166-bd86-862ff47f603d",
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'tableNumber',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_EP
+	VALUES ("073be095-d03b-4775-884a-55cf9f024947",
+	"a81a63cd-72a7-485b-a6cd-ef4812b2c856",
+	0,
+	'displayOrder',
+	'',
+	4);
+INSERT INTO C_AS
+	VALUES ("073be095-d03b-4775-884a-55cf9f024947",
+	'displayOrder',
+	'',
+	0,
+	"3d499355-f231-4166-bd86-862ff47f603d");
+INSERT INTO C_PP
+	VALUES ("550813cb-eacd-4490-ab9f-3dbca6a9ea60",
+	"073be095-d03b-4775-884a-55cf9f024947",
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'tableNumber',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_EP
+	VALUES ("5e6c7af2-eeb6-4374-88bb-5242f434c222",
+	"a81a63cd-72a7-485b-a6cd-ef4812b2c856",
+	0,
+	'placeOrder',
+	'',
+	5);
+INSERT INTO C_AS
+	VALUES ("5e6c7af2-eeb6-4374-88bb-5242f434c222",
+	'placeOrder',
+	'',
+	1,
+	"073be095-d03b-4775-884a-55cf9f024947");
+INSERT INTO C_PP
+	VALUES ("33078d2b-fc17-47b7-84c8-9fcdbed7d205",
+	"5e6c7af2-eeb6-4374-88bb-5242f434c222",
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'listOfMenuItems',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_PP
+	VALUES ("8e39d2d9-9ca4-4036-9096-40d180c559bb",
+	"5e6c7af2-eeb6-4374-88bb-5242f434c222",
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'tableNumber',
+	'',
+	0,
+	'',
+	"33078d2b-fc17-47b7-84c8-9fcdbed7d205");
+INSERT INTO C_EP
+	VALUES ("d2b22af5-4d42-433b-874f-475fd1156742",
+	"a81a63cd-72a7-485b-a6cd-ef4812b2c856",
+	0,
+	'requestBill',
+	'',
+	6);
+INSERT INTO C_AS
+	VALUES ("d2b22af5-4d42-433b-874f-475fd1156742",
+	'requestBill',
+	'',
+	1,
+	"5e6c7af2-eeb6-4374-88bb-5242f434c222");
+INSERT INTO C_PP
+	VALUES ("8fe038a5-f587-4126-9f66-63e090c2c7f6",
+	"d2b22af5-4d42-433b-874f-475fd1156742",
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'tableNumber',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_EP
+	VALUES ("b46f46df-ec94-4f67-b451-1334e0c8b24b",
+	"a81a63cd-72a7-485b-a6cd-ef4812b2c856",
+	0,
+	'requestAssistance',
+	'',
+	7);
+INSERT INTO C_AS
+	VALUES ("b46f46df-ec94-4f67-b451-1334e0c8b24b",
+	'requestAssistance',
+	'',
+	1,
+	"d2b22af5-4d42-433b-874f-475fd1156742");
+INSERT INTO C_PP
+	VALUES ("a1083824-9179-497b-9f2c-aded7ab16104",
+	"b46f46df-ec94-4f67-b451-1334e0c8b24b",
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'tableNumber',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_EP
+	VALUES ("c0c6ca9b-6680-48c1-9b44-4ded07541e20",
+	"a81a63cd-72a7-485b-a6cd-ef4812b2c856",
+	0,
+	'displayBill',
+	'',
+	8);
+INSERT INTO C_AS
+	VALUES ("c0c6ca9b-6680-48c1-9b44-4ded07541e20",
+	'displayBill',
+	'',
+	0,
+	"b46f46df-ec94-4f67-b451-1334e0c8b24b");
+INSERT INTO C_PP
+	VALUES ("8b8451bc-6dd6-441e-bf0c-35d515e817c3",
+	"c0c6ca9b-6680-48c1-9b44-4ded07541e20",
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'tableNumber',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_PP
+	VALUES ("a0560dea-8d2a-49fd-86eb-4d5cb06c10a5",
+	"c0c6ca9b-6680-48c1-9b44-4ded07541e20",
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'bill',
+	'',
+	0,
+	'',
+	"8b8451bc-6dd6-441e-bf0c-35d515e817c3");
+INSERT INTO C_EP
+	VALUES ("428b3b3f-0243-4209-9b2f-6caff45c8086",
+	"a81a63cd-72a7-485b-a6cd-ef4812b2c856",
+	0,
+	'enteredPayment',
+	'',
+	9);
+INSERT INTO C_AS
+	VALUES ("428b3b3f-0243-4209-9b2f-6caff45c8086",
+	'enteredPayment',
+	'',
+	1,
+	"c0c6ca9b-6680-48c1-9b44-4ded07541e20");
+INSERT INTO C_PP
+	VALUES ("9901f3f7-1974-4ada-9761-1152244ce524",
+	"428b3b3f-0243-4209-9b2f-6caff45c8086",
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'tableNumber',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_PP
+	VALUES ("3820f186-f9f8-4acd-b2be-b94dba20f103",
+	"428b3b3f-0243-4209-9b2f-6caff45c8086",
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'payment',
+	'',
+	0,
+	'',
+	"9901f3f7-1974-4ada-9761-1152244ce524");
+INSERT INTO C_EP
+	VALUES ("45fc15f2-cfe6-4166-9b8d-2395ec1e6d1f",
+	"a81a63cd-72a7-485b-a6cd-ef4812b2c856",
+	0,
+	'copyReceipt',
+	'',
+	10);
+INSERT INTO C_AS
+	VALUES ("45fc15f2-cfe6-4166-9b8d-2395ec1e6d1f",
+	'copyReceipt',
+	'',
+	1,
+	"428b3b3f-0243-4209-9b2f-6caff45c8086");
+INSERT INTO C_PP
+	VALUES ("12a743e5-1fcd-4a4b-a727-35bd5e2a37c0",
+	"45fc15f2-cfe6-4166-9b8d-2395ec1e6d1f",
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'tableNumber',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_EP
+	VALUES ("5db4251b-2d20-42c3-9e6c-65f86572a690",
+	"a81a63cd-72a7-485b-a6cd-ef4812b2c856",
+	0,
+	'displayReceipt',
+	'',
+	11);
+INSERT INTO C_AS
+	VALUES ("5db4251b-2d20-42c3-9e6c-65f86572a690",
+	'displayReceipt',
+	'',
+	0,
+	"45fc15f2-cfe6-4166-9b8d-2395ec1e6d1f");
+INSERT INTO C_PP
+	VALUES ("958ee8c0-5c52-4a86-801e-5e148e39c92d",
+	"5db4251b-2d20-42c3-9e6c-65f86572a690",
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'tableNumber',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_PP
+	VALUES ("60df15cb-252d-44d6-beab-bd46e80fd92d",
+	"5db4251b-2d20-42c3-9e6c-65f86572a690",
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'receipt',
+	'',
+	0,
+	'',
+	"958ee8c0-5c52-4a86-801e-5e148e39c92d");
+INSERT INTO C_EP
+	VALUES ("395d1f5a-d460-4817-a5c6-479632ec5e39",
+	"a81a63cd-72a7-485b-a6cd-ef4812b2c856",
+	0,
+	'makeTableAvailable',
+	'',
+	12);
+INSERT INTO C_AS
+	VALUES ("395d1f5a-d460-4817-a5c6-479632ec5e39",
+	'makeTableAvailable',
+	'',
+	1,
+	"5db4251b-2d20-42c3-9e6c-65f86572a690");
+INSERT INTO C_PP
+	VALUES ("d6e0ae53-1493-4507-b8b2-722307288ff0",
+	"395d1f5a-d460-4817-a5c6-479632ec5e39",
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'tableNumber',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO PE_PE
+	VALUES ("a81a63cd-72a7-485b-a6cd-ef4812b2c856",
+	1,
+	"9d118cb9-a5c8-4f2d-85ef-7b5412a0f641",
+	"00000000-0000-0000-0000-000000000000",
+	6);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("9d118cb9-a5c8-4f2d-85ef-7b5412a0f641",
+	"00000000-0000-0000-0000-000000000000",
+	"ec99c19e-f138-4399-a783-5c123c46d456",
+	'Interfaces',
+	'',
+	0,
+	'../Interfaces.xtuml');

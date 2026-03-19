@@ -1,0 +1,87 @@
+-- BP 7.1.6 content: Interface syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO C_I
+	VALUES ("bcf455bb-2bdb-4496-b8c5-ad4ad6c6e464",
+	"00000000-0000-0000-0000-000000000000",
+	'Messaging System Interface',
+	'');
+INSERT INTO C_EP
+	VALUES ("7235944a-0827-4f53-803d-bf044eecaf0b",
+	"bcf455bb-2bdb-4496-b8c5-ad4ad6c6e464",
+	0,
+	'printMessage',
+	'',
+	1);
+INSERT INTO C_AS
+	VALUES ("7235944a-0827-4f53-803d-bf044eecaf0b",
+	'printMessage',
+	'',
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_PP
+	VALUES ("ed1bdf98-7534-4464-a0b2-911112517efd",
+	"7235944a-0827-4f53-803d-bf044eecaf0b",
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'message',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_EP
+	VALUES ("4ba80429-1cec-4e44-8e4a-6ad88c3c3e44",
+	"bcf455bb-2bdb-4496-b8c5-ad4ad6c6e464",
+	0,
+	'emailMessage',
+	'',
+	2);
+INSERT INTO C_AS
+	VALUES ("4ba80429-1cec-4e44-8e4a-6ad88c3c3e44",
+	'emailMessage',
+	'',
+	0,
+	"7235944a-0827-4f53-803d-bf044eecaf0b");
+INSERT INTO C_PP
+	VALUES ("19922a79-0030-4027-a518-58c6cc0d545d",
+	"4ba80429-1cec-4e44-8e4a-6ad88c3c3e44",
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'message',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_EP
+	VALUES ("388fbea9-d719-4189-baeb-3d8802da6962",
+	"bcf455bb-2bdb-4496-b8c5-ad4ad6c6e464",
+	0,
+	'textMessage',
+	'',
+	3);
+INSERT INTO C_AS
+	VALUES ("388fbea9-d719-4189-baeb-3d8802da6962",
+	'textMessage',
+	'',
+	0,
+	"4ba80429-1cec-4e44-8e4a-6ad88c3c3e44");
+INSERT INTO C_PP
+	VALUES ("ae5934a5-842d-4629-b6f6-0f1d4174dd30",
+	"388fbea9-d719-4189-baeb-3d8802da6962",
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'message',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO PE_PE
+	VALUES ("bcf455bb-2bdb-4496-b8c5-ad4ad6c6e464",
+	1,
+	"9d118cb9-a5c8-4f2d-85ef-7b5412a0f641",
+	"00000000-0000-0000-0000-000000000000",
+	6);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("9d118cb9-a5c8-4f2d-85ef-7b5412a0f641",
+	"00000000-0000-0000-0000-000000000000",
+	"ec99c19e-f138-4399-a783-5c123c46d456",
+	'Interfaces',
+	'',
+	0,
+	'../Interfaces.xtuml');

@@ -1,0 +1,147 @@
+-- BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO O_OBJ
+	VALUES ("5106a3dd-66ac-45ec-8c94-9d233005ce88",
+	'Payment',
+	11,
+	'PAYM',
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_NBATTR
+	VALUES ("037ad345-b854-4316-8734-035008e3386a",
+	"5106a3dd-66ac-45ec-8c94-9d233005ce88");
+INSERT INTO O_BATTR
+	VALUES ("037ad345-b854-4316-8734-035008e3386a",
+	"5106a3dd-66ac-45ec-8c94-9d233005ce88");
+INSERT INTO O_ATTR
+	VALUES ("037ad345-b854-4316-8734-035008e3386a",
+	"5106a3dd-66ac-45ec-8c94-9d233005ce88",
+	"00000000-0000-0000-0000-000000000000",
+	'paymentType',
+	'',
+	'',
+	'paymentType',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000005",
+	'',
+	'');
+INSERT INTO O_REF
+	VALUES ("5106a3dd-66ac-45ec-8c94-9d233005ce88",
+	"6ebbd802-054e-49f2-9ba8-697d8528bad6",
+	0,
+	"31b43e24-0d4b-4568-b410-7af06c43578f",
+	"35c4293f-5bb5-4ad5-9c54-460159b0d83a",
+	"9a84cd3b-707e-4e4c-95cd-b6303ca02141",
+	"ed302c22-ae4d-4fb8-98a3-ed92b635d1b5",
+	"fe4f0b54-67ab-46ea-a9fe-a5d2dbbff5ce",
+	"02c95d5e-4acc-44c3-9f93-e363b1cb17d3",
+	"00000000-0000-0000-0000-000000000000",
+	0,
+	'',
+	'Bill',
+	'customerId',
+	'R10.''Pays For''');
+INSERT INTO R_RGO_PROXY
+	VALUES ("5106a3dd-66ac-45ec-8c94-9d233005ce88",
+	"35c4293f-5bb5-4ad5-9c54-460159b0d83a",
+	"9a84cd3b-707e-4e4c-95cd-b6303ca02141",
+	'../Classes.xtuml');
+INSERT INTO O_RTIDA_PROXY
+	VALUES ("31b43e24-0d4b-4568-b410-7af06c43578f",
+	"6ebbd802-054e-49f2-9ba8-697d8528bad6",
+	0,
+	"35c4293f-5bb5-4ad5-9c54-460159b0d83a",
+	"ed302c22-ae4d-4fb8-98a3-ed92b635d1b5",
+	'../Classes.xtuml');
+INSERT INTO O_RATTR
+	VALUES ("fe4f0b54-67ab-46ea-a9fe-a5d2dbbff5ce",
+	"5106a3dd-66ac-45ec-8c94-9d233005ce88",
+	"0fd5936b-cadd-4de0-97a6-c724efb724df",
+	"0e4d9a81-b8fa-40f1-b908-058469e3659a",
+	1,
+	'customerId');
+INSERT INTO O_BATTR_PROXY
+	VALUES ("0fd5936b-cadd-4de0-97a6-c724efb724df",
+	"0e4d9a81-b8fa-40f1-b908-058469e3659a",
+	'../Customer/Customer.xtuml');
+INSERT INTO O_ATTR
+	VALUES ("fe4f0b54-67ab-46ea-a9fe-a5d2dbbff5ce",
+	"5106a3dd-66ac-45ec-8c94-9d233005ce88",
+	"037ad345-b854-4316-8734-035008e3386a",
+	'customerId',
+	'',
+	'',
+	'customerId',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000007",
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES ("d02ab0b2-05ed-47c3-9f75-191d725cea2b",
+	"5106a3dd-66ac-45ec-8c94-9d233005ce88");
+INSERT INTO O_BATTR
+	VALUES ("d02ab0b2-05ed-47c3-9f75-191d725cea2b",
+	"5106a3dd-66ac-45ec-8c94-9d233005ce88");
+INSERT INTO O_ATTR
+	VALUES ("d02ab0b2-05ed-47c3-9f75-191d725cea2b",
+	"5106a3dd-66ac-45ec-8c94-9d233005ce88",
+	"fe4f0b54-67ab-46ea-a9fe-a5d2dbbff5ce",
+	'amount',
+	'',
+	'',
+	'amount',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES ("886afa6d-eb6a-43e3-a726-8419edc8aa57",
+	"5106a3dd-66ac-45ec-8c94-9d233005ce88");
+INSERT INTO O_BATTR
+	VALUES ("886afa6d-eb6a-43e3-a726-8419edc8aa57",
+	"5106a3dd-66ac-45ec-8c94-9d233005ce88");
+INSERT INTO O_ATTR
+	VALUES ("886afa6d-eb6a-43e3-a726-8419edc8aa57",
+	"5106a3dd-66ac-45ec-8c94-9d233005ce88",
+	"d02ab0b2-05ed-47c3-9f75-191d725cea2b",
+	'paymentId',
+	'',
+	'',
+	'paymentId',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000005",
+	'',
+	'');
+INSERT INTO O_ID
+	VALUES (0,
+	"5106a3dd-66ac-45ec-8c94-9d233005ce88");
+INSERT INTO O_OIDA
+	VALUES ("fe4f0b54-67ab-46ea-a9fe-a5d2dbbff5ce",
+	"5106a3dd-66ac-45ec-8c94-9d233005ce88",
+	0,
+	'customerId');
+INSERT INTO O_OIDA
+	VALUES ("037ad345-b854-4316-8734-035008e3386a",
+	"5106a3dd-66ac-45ec-8c94-9d233005ce88",
+	0,
+	'paymentType');
+INSERT INTO O_ID
+	VALUES (1,
+	"5106a3dd-66ac-45ec-8c94-9d233005ce88");
+INSERT INTO O_ID
+	VALUES (2,
+	"5106a3dd-66ac-45ec-8c94-9d233005ce88");
+INSERT INTO PE_PE
+	VALUES ("5106a3dd-66ac-45ec-8c94-9d233005ce88",
+	1,
+	"7266bcbd-d6fb-4a62-b1ba-18329169d19d",
+	"00000000-0000-0000-0000-000000000000",
+	4);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("7266bcbd-d6fb-4a62-b1ba-18329169d19d",
+	"00000000-0000-0000-0000-000000000000",
+	"ec99c19e-f138-4399-a783-5c123c46d456",
+	'Classes',
+	'',
+	0,
+	'../Classes.xtuml');

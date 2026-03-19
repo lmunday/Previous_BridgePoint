@@ -1,0 +1,92 @@
+-- BP 7.1.6 content: Interface syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO C_I
+	VALUES ("8228127c-9b6b-4b60-adf5-6e3ebea526dc",
+	"00000000-0000-0000-0000-000000000000",
+	'Kitchen Interface',
+	'');
+INSERT INTO C_EP
+	VALUES ("e9ae0ce5-3c8f-498c-be80-f9f99909278a",
+	"8228127c-9b6b-4b60-adf5-6e3ebea526dc",
+	0,
+	'preparedOrderedFood',
+	'',
+	2);
+INSERT INTO C_AS
+	VALUES ("e9ae0ce5-3c8f-498c-be80-f9f99909278a",
+	'preparedOrderedFood',
+	'',
+	0,
+	"53880222-ed39-497a-9279-7048f24c6b0c");
+INSERT INTO C_PP
+	VALUES ("24f5fd7f-efce-4b7e-955b-1b9f40f2655d",
+	"e9ae0ce5-3c8f-498c-be80-f9f99909278a",
+	"ba5eda7a-def5-0000-0000-000000000005",
+	'customerId',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_PP
+	VALUES ("75d7872b-bf6c-435d-9712-24118934ed53",
+	"e9ae0ce5-3c8f-498c-be80-f9f99909278a",
+	"ba5eda7a-def5-0000-0000-000000000005",
+	'menuItemId',
+	'',
+	0,
+	'',
+	"24f5fd7f-efce-4b7e-955b-1b9f40f2655d");
+INSERT INTO C_EP
+	VALUES ("53880222-ed39-497a-9279-7048f24c6b0c",
+	"8228127c-9b6b-4b60-adf5-6e3ebea526dc",
+	0,
+	'displayOrderedFood',
+	'',
+	1);
+INSERT INTO C_AS
+	VALUES ("53880222-ed39-497a-9279-7048f24c6b0c",
+	'displayOrderedFood',
+	'',
+	1,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_PP
+	VALUES ("5f70d456-0792-4ca1-af8d-c0b94307ea04",
+	"53880222-ed39-497a-9279-7048f24c6b0c",
+	"ba5eda7a-def5-0000-0000-000000000005",
+	'customerId',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_PP
+	VALUES ("ac3e8887-6bf7-4fe1-815d-e167ecc7effb",
+	"53880222-ed39-497a-9279-7048f24c6b0c",
+	"ba5eda7a-def5-0000-0000-000000000005",
+	'menuItemId',
+	'',
+	0,
+	'',
+	"5f70d456-0792-4ca1-af8d-c0b94307ea04");
+INSERT INTO C_PP
+	VALUES ("b9922687-8cfe-4d3b-b107-e2461e2b5b74",
+	"53880222-ed39-497a-9279-7048f24c6b0c",
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'numberOrdered',
+	'',
+	0,
+	'',
+	"ac3e8887-6bf7-4fe1-815d-e167ecc7effb");
+INSERT INTO PE_PE
+	VALUES ("8228127c-9b6b-4b60-adf5-6e3ebea526dc",
+	1,
+	"9d118cb9-a5c8-4f2d-85ef-7b5412a0f641",
+	"00000000-0000-0000-0000-000000000000",
+	6);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("9d118cb9-a5c8-4f2d-85ef-7b5412a0f641",
+	"00000000-0000-0000-0000-000000000000",
+	"ec99c19e-f138-4399-a783-5c123c46d456",
+	'Interfaces',
+	'',
+	0,
+	'../Interfaces.xtuml');

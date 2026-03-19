@@ -1,0 +1,83 @@
+-- BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO O_OBJ
+	VALUES ("fe770f8b-c279-4aab-aad2-1665a50835d0",
+	'Receipt',
+	12,
+	'RECEI',
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_REF
+	VALUES ("fe770f8b-c279-4aab-aad2-1665a50835d0",
+	"6ebbd802-054e-49f2-9ba8-697d8528bad6",
+	0,
+	"31b43e24-0d4b-4568-b410-7af06c43578f",
+	"e0d09c1a-3bf6-4b76-be5b-92bbe9801c5c",
+	"1eed495f-6900-4082-ba95-3142084b3663",
+	"732adf9c-6178-43fe-b3c7-1d0bbea0cc89",
+	"e7f2a4a1-97b7-4a85-a01a-5a5698221cbd",
+	"b0e67545-f320-41f3-b232-5b82bf76592f",
+	"00000000-0000-0000-0000-000000000000",
+	0,
+	'',
+	'Bill',
+	'customerId',
+	'R13.''Confirms Payment For''');
+INSERT INTO R_RGO_PROXY
+	VALUES ("fe770f8b-c279-4aab-aad2-1665a50835d0",
+	"e0d09c1a-3bf6-4b76-be5b-92bbe9801c5c",
+	"1eed495f-6900-4082-ba95-3142084b3663",
+	'../Classes.xtuml');
+INSERT INTO O_RTIDA_PROXY
+	VALUES ("31b43e24-0d4b-4568-b410-7af06c43578f",
+	"6ebbd802-054e-49f2-9ba8-697d8528bad6",
+	0,
+	"e0d09c1a-3bf6-4b76-be5b-92bbe9801c5c",
+	"732adf9c-6178-43fe-b3c7-1d0bbea0cc89",
+	'../Classes.xtuml');
+INSERT INTO O_RATTR
+	VALUES ("e7f2a4a1-97b7-4a85-a01a-5a5698221cbd",
+	"fe770f8b-c279-4aab-aad2-1665a50835d0",
+	"0fd5936b-cadd-4de0-97a6-c724efb724df",
+	"0e4d9a81-b8fa-40f1-b908-058469e3659a",
+	1,
+	'customerId');
+INSERT INTO O_BATTR_PROXY
+	VALUES ("0fd5936b-cadd-4de0-97a6-c724efb724df",
+	"0e4d9a81-b8fa-40f1-b908-058469e3659a",
+	'../Customer/Customer.xtuml');
+INSERT INTO O_ATTR
+	VALUES ("e7f2a4a1-97b7-4a85-a01a-5a5698221cbd",
+	"fe770f8b-c279-4aab-aad2-1665a50835d0",
+	"00000000-0000-0000-0000-000000000000",
+	'customerId',
+	'',
+	'',
+	'customerId',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000007",
+	'',
+	'');
+INSERT INTO O_ID
+	VALUES (0,
+	"fe770f8b-c279-4aab-aad2-1665a50835d0");
+INSERT INTO O_ID
+	VALUES (1,
+	"fe770f8b-c279-4aab-aad2-1665a50835d0");
+INSERT INTO O_ID
+	VALUES (2,
+	"fe770f8b-c279-4aab-aad2-1665a50835d0");
+INSERT INTO PE_PE
+	VALUES ("fe770f8b-c279-4aab-aad2-1665a50835d0",
+	1,
+	"7266bcbd-d6fb-4a62-b1ba-18329169d19d",
+	"00000000-0000-0000-0000-000000000000",
+	4);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("7266bcbd-d6fb-4a62-b1ba-18329169d19d",
+	"00000000-0000-0000-0000-000000000000",
+	"ec99c19e-f138-4399-a783-5c123c46d456",
+	'Classes',
+	'',
+	0,
+	'../Classes.xtuml');

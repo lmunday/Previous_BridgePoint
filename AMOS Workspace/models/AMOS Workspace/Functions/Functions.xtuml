@@ -1,0 +1,9 @@
+-- BP 7.1.6 content: Package syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO EP_PKG
+	VALUES ("0cdaaaca-f5b0-4262-bb52-b01b85cadc31",
+	"00000000-0000-0000-0000-000000000000",
+	"00000000-0000-0000-0000-000000000000",
+	'Functions',
+	'',
+	0);

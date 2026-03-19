@@ -1,0 +1,54 @@
+-- BP 7.1.6 content: Package syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO EP_PKG
+	VALUES ("538d04e8-7c65-42b0-b7ac-ef97f80cb007",
+	"00000000-0000-0000-0000-000000000000",
+	"ec99c19e-f138-4399-a783-5c123c46d456",
+	'External Entities',
+	'',
+	0);
+INSERT INTO GD_MD
+	VALUES ("279c2ada-4ee2-449a-8c12-71792c761308",
+	112,
+	"538d04e8-7c65-42b0-b7ac-ef97f80cb007",
+	108,
+	0,
+	0,
+	1,
+	1,
+	1,
+	12,
+	1,
+	0,
+	0,
+	200,
+	150,
+	0,
+	'4.1.17',
+	'AMOS Workspace::Functions::External Entities');
+INSERT INTO DIM_DIA
+	VALUES ("279c2ada-4ee2-449a-8c12-71792c761308",
+	'',
+	1.000000,
+	0.000000,
+	0.000000,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO PE_PE
+	VALUES ("538d04e8-7c65-42b0-b7ac-ef97f80cb007",
+	1,
+	"0cdaaaca-f5b0-4262-bb52-b01b85cadc31",
+	"00000000-0000-0000-0000-000000000000",
+	7);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("0cdaaaca-f5b0-4262-bb52-b01b85cadc31",
+	"ec99c19e-f138-4399-a783-5c123c46d456",
+	"ec99c19e-f138-4399-a783-5c123c46d456",
+	'Functions',
+	'',
+	0,
+	'../Functions.xtuml');
+INSERT INTO S_SYS_PROXY
+	VALUES ("ec99c19e-f138-4399-a783-5c123c46d456",
+	'AMOS Workspace',
+	1,
+	'../../AMOS Workspace.xtuml');
