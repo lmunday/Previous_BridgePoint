@@ -3,9 +3,9 @@
 within MicrowaveOven::components::MicrowaveOven::'Microwave Oven' is
 
   //! The internal oven light, illuminated only when the oven tube is powered on.
-  @key_letters("LIGH");
+  @key_letters("MO_IL");
   @class_num(3);
-  class Light is
+  class 'Internal Light' is
 
     //! The uniquely-specified light identifier.
     unique LightID: integer;

@@ -20,25 +20,13 @@ within MicrowaveOven::components is
   //! * To PIO domain (not shown)
   //! * To Timer domain
   component MicrowaveOven is
-
+    
     package Datatypes;
     package 'External Entities';
     package Functions;
     package 'Microwave Oven';
     package 'Test Subsystem';
-
-    provided port Port1 implements Oven Interface is
-
-      @dialect("oal");
-      @message_num(1);
-      message StartOven() return void to provider is
-        @noparse
-        Functions::DefineOven;
-        @endnoparse
-      end message;
-
-    end port;
-
+    
   end component;
 
 end;

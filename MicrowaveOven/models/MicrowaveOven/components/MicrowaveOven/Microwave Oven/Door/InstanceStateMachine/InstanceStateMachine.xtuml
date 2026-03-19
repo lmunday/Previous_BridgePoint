@@ -16,25 +16,21 @@ within MicrowaveOven::components::MicrowaveOven::'Microwave Oven'::Door is
   @event_num(2);
   event close;
 
-  @event_num(3);
-  event create_door;
-
   state model is
 
-    |               | release       | close         | create_door   |
-    | ------------- | ------------- | ------------- | ------------- |
-    | non_existent  | cannot_happen | cannot_happen | Open          |
-    | Open          | ignore        | Closed        | cannot_happen |
-    | Closed        | Open          | ignore        | cannot_happen |
+    |         | release | close   |
+    | ------- | ------- | ------- |
+    | Open    | ignore  | Closed  |
+    | Closed  | Open    | ignore  |
 
   end state model;
 
   state Open is
     @noparse
     assign self.is_secure = false;
-
-    select one oven related by self->OVEN[R4];
-    generate OVEN4:'cancel_cooking' to oven;
+    
+    select one oven related by self->MO_O[R4];
+    generate MO_O4:'cancel_cooking' to oven;
     @endnoparse
   end state;
 

@@ -1,6 +1,6 @@
 // BP 7.1.6 content: InstanceStateMachine syschar: 3 persistence-version: 7.1.6
 
-within MicrowaveOven::components::MicrowaveOven::'Microwave Oven'::Light is
+within MicrowaveOven::components::MicrowaveOven::'Microwave Oven'::'Internal Light' is
 
   @state_num(1);
   @dialect("oal");

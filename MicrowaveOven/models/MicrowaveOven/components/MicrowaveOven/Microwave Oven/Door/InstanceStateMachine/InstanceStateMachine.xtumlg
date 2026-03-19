@@ -13,50 +13,35 @@ shapes :
     bounds : x : 1860.0 y : 1560.0 width : 352.0 height : 112.0
 
 connectors :
-  connector : Open____DOOR2__close
-    render : transition "MicrowaveOven::components::MicrowaveOven::Microwave Oven::Door::Instance State Machine::Open::DOOR2: close"
+  connector : Open____MO_D2__close
+    render : transition "MicrowaveOven::components::MicrowaveOven::Microwave Oven::Door::Instance State Machine::Open::MO_D2: close"
     polyline :
       segment :
         start : x : 1956.0 y : 1468.0
         end :   x : 1956.0 y : 1560.0
     anchors :
       start :
-        point : x : 1956.0 y : 1468.0
+        point : x : 1952.0 y : 1472.0
         shape : Open
       end :
-        point : x : 1956.0 y : 1560.0
+        point : x : 1952.0 y : 1568.0
         shape : Closed
     texts :
       text :
         bounds : x : 1844.0 y : 1513.0 width : 154.0 height : 24.0 where : middle
-  connector : Closed____DOOR1__release
-    render : transition "MicrowaveOven::components::MicrowaveOven::Microwave Oven::Door::Instance State Machine::Closed::DOOR1: release"
+  connector : Closed____MO_D1__release
+    render : transition "MicrowaveOven::components::MicrowaveOven::Microwave Oven::Door::Instance State Machine::Closed::MO_D1: release"
     polyline :
       segment :
         start : x : 2100.0 y : 1560.0
         end :   x : 2100.0 y : 1468.0
     anchors :
       start :
-        point : x : 2100.0 y : 1560.0
+        point : x : 2096.0 y : 1568.0
         shape : Closed
       end :
-        point : x : 2100.0 y : 1468.0
+        point : x : 2096.0 y : 1472.0
         shape : Open
     texts :
       text :
         bounds : x : 2110.0 y : 1508.0 width : 146.0 height : 24.0 where : middle
-  connector : DOOR3__create_doortocreationstate__Open
-    render : creation_transition "MicrowaveOven::components::MicrowaveOven::Microwave Oven::Door::Instance State Machine::DOOR3: create_door to creation state: Open"
-    polyline :
-      segment :
-        start : x : 2027.0 y : 1308.0
-        end :   x : 2027.0 y : 1211.0
-    anchors :
-      start :
-        point : x : 2027.0 y : 1308.0
-        shape : Open
-      end :
-        point : x : 2027.0 y : 1211.0
-    texts :
-      text :
-        bounds : x : 1903.0 y : 1253.0 width : 0.0 height : 0.0 where : middle

@@ -7,18 +7,17 @@ within MicrowaveOven::components::MicrowaveOven is
   package 'Microwave Oven' is
     class Beeper;
     class Door;
-    class Lite;
+    class 'Internal Light';
     class 'Magnetron Tube';
     class Oven;
     class Turntable;
-    class 'Test Sequences' is MicrowaveOven::components::MicrowaveOven::'Test Subsystem'::'Test Sequences';
-    class 'Test Sequences' is MicrowaveOven::components::MicrowaveOven::'Test Subsystem'::'Test Sequences';
     //! A single magnetron tube is the core component of the oven assembly. Being related to the oven, it can be direclty powered on & off.
     relationship R1 is 'Magnetron Tube' unconditionally 'is housed in' one Oven,
                        Oven unconditionally houses one 'Magnetron Tube';
 
-    relationship R2 is Lite unconditionally Illuminates one Oven,
-                       Oven unconditionally 'Is Illuminated By' one Lite;
+    //! A single, low wattage light illuminates the interior of the oven to aid viewing of the cooking process. Being related to the oven enables the light to be controlled on & off as necessary.
+    relationship R2 is 'Internal Light' unconditionally illuminates one Oven,
+                       Oven unconditionally 'is illuminated by' one 'Internal Light';
 
     //! A single, audible, repeating beeper is a useful cosmetic component related to, and controlled by, the oven when cooking is over.
     relationship R3 is Beeper unconditionally 'is located in' one Oven,
@@ -32,7 +31,6 @@ within MicrowaveOven::components::MicrowaveOven is
     relationship R5 is Oven unconditionally has one Turntable,
                        Turntable unconditionally occupies one Oven;
 
-    package 'Class Interaction Diagram';
   end package;
 
 end;

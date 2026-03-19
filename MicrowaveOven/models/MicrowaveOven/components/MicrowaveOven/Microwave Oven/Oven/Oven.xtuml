@@ -9,7 +9,7 @@ within MicrowaveOven::components::MicrowaveOven::'Microwave Oven' is
   //! * a turntable
   //! * a magnetron tube
   //! * a beeper
-  @key_letters("OVEN");
+  @key_letters("MO_O");
   @class_num(1);
   class Oven is
 
@@ -18,6 +18,9 @@ within MicrowaveOven::components::MicrowaveOven::'Microwave Oven' is
 
     @ref_mode("referred_to");
     TubeID: referential (R1.'Magnetron Tube'.TubeID) integer;
+
+    @ref_mode("referred_to");
+    LightID: referential (R2.'Internal Light'.LightID) integer;
 
     @ref_mode("referred_to");
     BeeperID: referential (R3.Beeper.BeeperID) integer;
@@ -34,21 +37,7 @@ within MicrowaveOven::components::MicrowaveOven::'Microwave Oven' is
     //! Records any remaining cooking period when cooking is suspended as a consequence of the oven door being opened or the 'cancel' key being pressed by the oven user.
     remaining_cooking_time: integer;
 
-    @ref_mode("referred_to");
-    LightID: referential (R2.Lite.LightID) integer;
-
     preferred identifier is (OvenID);
-
-    @dialect("oal");
-    @operation_num(1);
-    operation createOven() is
-      @noparse
-      assign self.remaining_cooking_time = 0;
-      //oven_timer is a reference to a timer instance ist_ref<Timer>
-      select one beeper related by self->BEEP[R3];
-      generate BEEP4:'stop_beeping' to beeper;
-      @endnoparse
-    end operation;
 
   end class;
 

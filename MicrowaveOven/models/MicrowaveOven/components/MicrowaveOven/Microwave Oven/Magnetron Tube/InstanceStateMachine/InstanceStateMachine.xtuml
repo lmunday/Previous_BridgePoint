@@ -30,31 +30,19 @@ within MicrowaveOven::components::MicrowaveOven::'Microwave Oven'::'Magnetron Tu
   @event_num(4);
   event power_off;
 
-  @event_num(5);
-  event create_magnetron;
-
   state model is
 
-    |                               | increase_power                | decrease_power                | power_on                      | power_off                     | create_magnetron              |
-    | ----------------------------- | ----------------------------- | ----------------------------- | ----------------------------- | ----------------------------- | ----------------------------- |
-    | non_existent                  | cannot_happen                 | cannot_happen                 | cannot_happen                 | cannot_happen                 | 'Output Power Stable and OFF' |
-    | 'Output Power Stable and OFF' | 'Raising Output Power'        | 'Reducing Output Power'       | 'Output Power Stable and ON'  | ignore                        | cannot_happen                 |
-    | 'Reducing Output Power'       | 'Raising Output Power'        | 'Reducing Output Power'       | 'Output Power Stable and ON'  | 'Output Power Stable and OFF' | cannot_happen                 |
-    | 'Raising Output Power'        | 'Raising Output Power'        | 'Reducing Output Power'       | 'Output Power Stable and ON'  | 'Output Power Stable and OFF' | cannot_happen                 |
-    | 'Output Power Stable and ON'  | 'Raising Output Power'        | 'Reducing Output Power'       | ignore                        | 'Output Power Stable and OFF' | cannot_happen                 |
+    |                               | increase_power                | decrease_power                | power_on                      | power_off                     |
+    | ----------------------------- | ----------------------------- | ----------------------------- | ----------------------------- | ----------------------------- |
+    | 'Output Power Stable and OFF' | 'Raising Output Power'        | 'Reducing Output Power'       | 'Output Power Stable and ON'  | ignore                        |
+    | 'Reducing Output Power'       | 'Raising Output Power'        | 'Reducing Output Power'       | 'Output Power Stable and ON'  | 'Output Power Stable and OFF' |
+    | 'Raising Output Power'        | 'Raising Output Power'        | 'Reducing Output Power'       | 'Output Power Stable and ON'  | 'Output Power Stable and OFF' |
+    | 'Output Power Stable and ON'  | 'Raising Output Power'        | 'Reducing Output Power'       | ignore                        | 'Output Power Stable and OFF' |
 
   end state model;
 
-  state 'Output Power Stable and OFF' is
-    @noparse
-    //Turn off power
-    self.current_power_output = tube_wattage::off;
-    @endnoparse
-  end state;
-
   state 'Reducing Output Power' is
     @noparse
-    //Increase power setting
     if (self.current_power_output == tube_wattage::med_low)
        self.current_power_output = tube_wattage::low;
     elif (self.current_power_output == tube_wattage::medium)
@@ -69,7 +57,6 @@ within MicrowaveOven::components::MicrowaveOven::'Microwave Oven'::'Magnetron Tu
 
   state 'Raising Output Power' is
     @noparse
-    //Decrease power setting
     if (self.current_power_output == tube_wattage::low)
        self.current_power_output = tube_wattage::med_low;
     elif (self.current_power_output == tube_wattage::med_low)
@@ -79,12 +66,6 @@ within MicrowaveOven::components::MicrowaveOven::'Microwave Oven'::'Magnetron Tu
     elif (self.current_power_output == tube_wattage::med_high)
        self.current_power_output = tube_wattage::high;
     end if;
-    @endnoparse
-  end state;
-
-  state 'Output Power Stable and ON' is
-    @noparse
-    //Apply power to oven
     @endnoparse
   end state;
 

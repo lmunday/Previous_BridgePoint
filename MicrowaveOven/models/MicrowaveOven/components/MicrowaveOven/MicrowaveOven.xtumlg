@@ -25,18 +25,3 @@ shapes :
     bounds : x : 1872.0 y : 1248.0 width : 160.0 height : 96.0
 
 connectors :
-  connector : Port1____OvenInterface
-    render : provided_interface "MicrowaveOven::components::MicrowaveOven::Port1::Oven Interface"
-    polyline :
-      segment :
-        start : x : 2573.0 y : 1368.0
-        end :   x : 2648.0 y : 1368.0
-    anchors :
-      start :
-        point : x : 2573.0 y : 1368.0
-        shape : MicrowaveOven____components____MicrowaveOven
-      end :
-        point : x : 2648.0 y : 1368.0
-    texts :
-      text :
-        bounds : x : 2572.0 y : 1328.0 width : 0.0 height : 0.0 where : middle

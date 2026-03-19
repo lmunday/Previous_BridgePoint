@@ -13,8 +13,7 @@ within MicrowaveOven::components::MicrowaveOven is
       //! 700w
       med_low, 
       //! 800w
-      medium, 
-      off
+      medium
     );
 
   end package;

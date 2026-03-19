@@ -5,7 +5,7 @@ within MicrowaveOven::components::MicrowaveOven::'Microwave Oven' is
   //! An audible signal generator.
   //! 
   //! The beeper repeats four times on completion of the cooking period, signalling to the user that the oven door can be opened to inspect the readiness of the food inside.
-  @key_letters("BEEP");
+  @key_letters("MO_B");
   @class_num(4);
   class Beeper is
 

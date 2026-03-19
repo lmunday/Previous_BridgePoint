@@ -6,24 +6,24 @@ within MicrowaveOven::components::MicrowaveOven is
     @dialect("oal");
     function CancelCooking() is
       @noparse
-      select any oven from instances of OVEN;
-      generate OVEN4:'cancel_cooking'  to oven;
+      select any oven from instances of MO_O;
+      generate MO_O4:'cancel_cooking'  to oven;
       @endnoparse
     end function;
 
     @dialect("oal");
     function CloseDoor() is
       @noparse
-      select any door from instances of DOOR;
-      generate DOOR2:'close'  to door;
+      select any door from instances of MO_D;
+      generate MO_D2:'close'  to door;
       @endnoparse
     end function;
 
     @dialect("oal");
     function DecreasePower() is
       @noparse
-      select any tube from instances of MAGN;
-      generate MAGN2:'decrease_power' to tube;
+      select any tube from instances of MO_MT;
+      generate MO_MT2:'decrease_power' to tube;
       @endnoparse
     end function;
 
@@ -31,42 +31,42 @@ within MicrowaveOven::components::MicrowaveOven is
     function DefineOven() is
       @noparse
       // Create the instances in the system.
-      create object instance oven of OVEN;
-
-      assign oven.remaining_cooking_time = 0;
-
-      create object instance tube of MAGN;
-      relate oven to tube across R1;
+      create object instance mo of MO_O;
+      
+      assign mo.remaining_cooking_time = 0;
+      
+      create object instance tube of MO_MT;
+      relate mo to tube across R1;
       assign tube.current_power_output = tube_wattage::high;
-
-      create object instance light of LIGH;
-      relate oven to light across R2;
-
-      create object instance beeper of BEEP;
-      relate oven to beeper across R3;
-
-      create object instance door of DOOR;
-      relate oven to door across R4;
+      
+      create object instance light of MO_IL;
+      relate mo to light across R2;
+      
+      create object instance beeper of MO_B;
+      relate mo to beeper across R3;
+      
+      create object instance door of MO_D;
+      relate mo to door across R4;
       assign door.is_secure = false;
-
-      create object instance turntable of TURN;
-      relate oven to turntable across R5;
+      
+      create object instance turntable of MO_TRN;
+      relate mo to turntable across R5;
       @endnoparse
     end function;
 
     @dialect("oal");
     function IncreasePower() is
       @noparse
-      select any tube from instances of MAGN;
-      generate MAGN1:'increase_power'  to tube;
+      select any tube from instances of MO_MT;
+      generate MO_MT1:'increase_power'  to tube;
       @endnoparse
     end function;
 
     @dialect("oal");
     function OpenDoor() is
       @noparse
-      select any door from instances of DOOR;
-      generate DOOR1:'release'  to door;
+      select any door from instances of MO_D;
+      generate MO_D1:'release'  to door;
       @endnoparse
     end function;
 
@@ -75,34 +75,26 @@ within MicrowaveOven::components::MicrowaveOven is
       @noparse
       // cooking period is to be specified in seconds and must be converted to usec in order
       // to be compatible with BP's view of time
-
-      // timePeriod = param.cookingPeriod;
-      select any oven from instances of OVEN;
-      generate OVEN8:'cooking_period' (period:param.cookingPeriod) to oven;
+      
+      timePeriod = 1000000 * param.cookingPeriod;
+      select any oven from instances of MO_O;
+      generate MO_O8:'cooking_period' (period:timePeriod) to oven;
       @endnoparse
     end function;
 
     @dialect("oal");
     function StartCooking() is
       @noparse
-      select any oven from instances of OVEN;
-      generate OVEN3 to oven;
+      select any oven from instances of MO_O;
+      generate MO_O3:'start_cooking'  to oven;
       @endnoparse
     end function;
 
     @dialect("oal");
     function TestSequence1() is
       @noparse
-      create object instance testSequence of TEST;
-      generate TEST2 to testSequence;
-      @endnoparse
-    end function;
-
-    @dialect("oal");
-    function TestSequence2() is
-      @noparse
-      create object instance testSequence of TEST;
-      generate TEST3 to testSequence;
+      create object instance testSequence of MO_TS;
+      generate MO_TS2 to testSequence;
       @endnoparse
     end function;
 

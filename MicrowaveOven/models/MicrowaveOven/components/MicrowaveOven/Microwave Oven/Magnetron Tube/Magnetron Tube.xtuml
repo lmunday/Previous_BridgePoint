@@ -11,7 +11,7 @@ within MicrowaveOven::components::MicrowaveOven::'Microwave Oven' is
   //! * power on
   //! * power off
   //! * raising & lowering output power level
-  @key_letters("MAGN");
+  @key_letters("MO_MT");
   @class_num(2);
   class 'Magnetron Tube' is
 

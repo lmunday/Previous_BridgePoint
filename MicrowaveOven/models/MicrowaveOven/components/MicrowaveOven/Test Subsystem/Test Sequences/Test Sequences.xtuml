@@ -3,7 +3,7 @@
 within MicrowaveOven::components::MicrowaveOven::'Test Subsystem' is
 
   //! Two sample test scenarios encapsulated within a class.
-  @key_letters("TEST");
+  @key_letters("MO_TS");
   @class_num(100);
   class 'Test Sequences' is
 
