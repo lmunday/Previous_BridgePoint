@@ -1,0 +1,5 @@
+render : "MicrowaveOven::components::MicrowaveOven::Microwave Oven::Light::Instance State Machine"
+
+shapes :
+
+connectors :

@@ -1,0 +1,111 @@
+// BP 7.1.6 content: Package syschar: 3 persistence-version: 7.1.6
+
+within MicrowaveOven::components::MicrowaveOven is
+
+  package Functions is
+    @dialect("oal");
+    function CancelCooking() is
+      @noparse
+      select any oven from instances of OVEN;
+      generate OVEN4:'cancel_cooking'  to oven;
+      @endnoparse
+    end function;
+
+    @dialect("oal");
+    function CloseDoor() is
+      @noparse
+      select any door from instances of DOOR;
+      generate DOOR2:'close'  to door;
+      @endnoparse
+    end function;
+
+    @dialect("oal");
+    function DecreasePower() is
+      @noparse
+      select any tube from instances of MAGN;
+      generate MAGN2:'decrease_power' to tube;
+      @endnoparse
+    end function;
+
+    @dialect("oal");
+    function DefineOven() is
+      @noparse
+      // Create the instances in the system.
+      create object instance oven of OVEN;
+
+      assign oven.remaining_cooking_time = 0;
+
+      create object instance tube of MAGN;
+      relate oven to tube across R1;
+      assign tube.current_power_output = tube_wattage::high;
+
+      create object instance light of LIGH;
+      relate oven to light across R2;
+
+      create object instance beeper of BEEP;
+      relate oven to beeper across R3;
+
+      create object instance door of DOOR;
+      relate oven to door across R4;
+      assign door.is_secure = false;
+
+      create object instance turntable of TURN;
+      relate oven to turntable across R5;
+      @endnoparse
+    end function;
+
+    @dialect("oal");
+    function IncreasePower() is
+      @noparse
+      select any tube from instances of MAGN;
+      generate MAGN1:'increase_power'  to tube;
+      @endnoparse
+    end function;
+
+    @dialect("oal");
+    function OpenDoor() is
+      @noparse
+      select any door from instances of DOOR;
+      generate DOOR1:'release'  to door;
+      @endnoparse
+    end function;
+
+    @dialect("oal");
+    function SpecifyCookingPeriod(cookingPeriod: in integer) is
+      @noparse
+      // cooking period is to be specified in seconds and must be converted to usec in order
+      // to be compatible with BP's view of time
+
+      // timePeriod = param.cookingPeriod;
+      select any oven from instances of OVEN;
+      generate OVEN8:'cooking_period' (period:param.cookingPeriod) to oven;
+      @endnoparse
+    end function;
+
+    @dialect("oal");
+    function StartCooking() is
+      @noparse
+      select any oven from instances of OVEN;
+      generate OVEN3 to oven;
+      @endnoparse
+    end function;
+
+    @dialect("oal");
+    function TestSequence1() is
+      @noparse
+      create object instance testSequence of TEST;
+      generate TEST2 to testSequence;
+      @endnoparse
+    end function;
+
+    @dialect("oal");
+    function TestSequence2() is
+      @noparse
+      create object instance testSequence of TEST;
+      generate TEST3 to testSequence;
+      @endnoparse
+    end function;
+
+  end package;
+
+end;

@@ -1,0 +1,8 @@
+render : "Structure::Domain::Component_Name::Data Types"
+
+shapes :
+  shape : UserDataTypeName
+    render : user_data_type "Structure::Domain::Component_Name::Data Types::UserDataTypeName"
+    bounds : x : 0.0 y : 0.0 width : 200.0 height : 150.0
+
+connectors :

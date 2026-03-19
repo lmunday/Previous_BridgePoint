@@ -1,0 +1,11 @@
+// BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
+
+within Structure::Domain::Component_Name::'Logical Model' is
+
+	@key_letters("Class_Name");
+	@class_num(1);
+	class Class_Name is
+
+	end class;
+
+end;

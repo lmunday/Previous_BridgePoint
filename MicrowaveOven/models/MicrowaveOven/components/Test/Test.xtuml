@@ -1,0 +1,16 @@
+// BP 7.1.6 content: Component syschar: 3 persistence-version: 7.1.6
+
+within MicrowaveOven::components is
+
+  component Test is
+    required port Port1 implements Oven Interface is
+
+      @dialect("oal");
+      @message_num(1);
+      message StartOven() return void to provider;
+
+    end port;
+
+  end component;
+
+end;

@@ -1,0 +1,13 @@
+// BP 7.1.6 content: Package syschar: 3 persistence-version: 7.1.6
+
+within Structure::Domain::Component_Name is
+
+	package 'External Entities' is
+		@key_letters("External_Entity");
+		@realized;
+		external External_Entity is
+		end external;
+
+	end package;
+
+end;

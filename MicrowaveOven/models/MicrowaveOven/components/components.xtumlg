@@ -1,0 +1,49 @@
+render : "MicrowaveOven::components"
+
+properties :
+  viewport : x : 4000.0 y : 3000.0
+  zoom : 1.0
+
+shapes :
+  shape : MicrowaveOven
+    render : component "MicrowaveOven::components::MicrowaveOven"
+    bounds : x : 4272.0 y : 3240.0 width : 289.0 height : 181.0
+  shape : OvenInterface
+    render : interface "MicrowaveOven::components::Oven Interface"
+    bounds : x : 4608.0 y : 3324.0 width : 121.0 height : 97.0
+  shape : Test
+    render : component "MicrowaveOven::components::Test"
+    bounds : x : 4776.0 y : 3276.0 width : 121.0 height : 97.0
+
+connectors :
+  connector : MicrowaveOven____Port1____OvenInterface
+    render : provided_interface "MicrowaveOven::components::MicrowaveOven::Port1::Oven Interface"
+    polyline :
+      segment :
+        start : x : 4561.0 y : 3283.0
+        end :   x : 4667.0 y : 3251.0
+    anchors :
+      start :
+        point : x : 4561.0 y : 3283.0
+        shape : MicrowaveOven
+      end :
+        point : x : 4667.0 y : 3251.0
+    texts :
+      text :
+        bounds : x : 4625.0 y : 3222.0 width : 0.0 height : 0.0 where : middle
+  connector : Test____Port1____OvenInterface
+    render : required_interface "MicrowaveOven::components::Test::Port1::Oven Interface"
+    polyline :
+      segment :
+        start : x : 4776.0 y : 3276.0
+        end :   x : 4667.0 y : 3251.0
+    anchors :
+      start :
+        point : x : 4776.0 y : 3276.0
+        shape : Test
+      end :
+        point : x : 4667.0 y : 3251.0
+        connector : MicrowaveOven____Port1____OvenInterface
+    texts :
+      text :
+        bounds : x : 4709.0 y : 3221.0 width : 0.0 height : 0.0 where : middle

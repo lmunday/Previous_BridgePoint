@@ -1,0 +1,5 @@
+render : "Structure::Domain::Component_Name::Logical Model"
+
+shapes :
+
+connectors :

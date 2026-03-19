@@ -1,0 +1,21 @@
+render : "MicrowaveOven::components::Test"
+
+shapes :
+  shape : MicrowaveOven____components____Test container
+    render : component_container "MicrowaveOven::components::Test"
+    bounds : x : 4100.0 y : 3100.0 width : 1020.0 height : 247.0
+
+connectors :
+  connector : Port1____OvenInterface
+    render : required_interface "MicrowaveOven::components::Test::Port1::Oven Interface"
+    polyline :
+      segment :
+        start : x : 4100.0 y : 3102.0
+        end :   x : 4025.0 y : 3102.0
+    anchors :
+      start :
+        point : x : 4100.0 y : 3102.0
+        shape : MicrowaveOven____components____Test
+      end :
+        point : x : 4025.0 y : 3102.0
+    texts :

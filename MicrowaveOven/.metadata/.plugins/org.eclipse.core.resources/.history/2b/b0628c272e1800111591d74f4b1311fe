@@ -1,0 +1,11 @@
+// BP 7.1.6 content: Component syschar: 3 persistence-version: 7.1.6
+
+within Structure::Domain is
+
+	component Component_Name is
+
+		package 'Data Types';
+
+	end component;
+
+end;

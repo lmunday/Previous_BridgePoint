@@ -1,0 +1,91 @@
+// BP 7.1.6 content: InstanceStateMachine syschar: 3 persistence-version: 7.1.6
+
+within MicrowaveOven::components::MicrowaveOven::'Microwave Oven'::'Magnetron Tube' is
+
+  @state_num(1);
+  @dialect("oal");
+  state 'Output Power Stable and OFF';
+
+  @state_num(2);
+  @dialect("oal");
+  state 'Reducing Output Power';
+
+  @state_num(3);
+  @dialect("oal");
+  state 'Raising Output Power';
+
+  @state_num(4);
+  @dialect("oal");
+  state 'Output Power Stable and ON';
+
+  @event_num(1);
+  event increase_power;
+
+  @event_num(2);
+  event decrease_power;
+
+  @event_num(3);
+  event power_on;
+
+  @event_num(4);
+  event power_off;
+
+  @event_num(5);
+  event create_magnetron;
+
+  state model is
+
+    |                               | increase_power                | decrease_power                | power_on                      | power_off                     | create_magnetron              |
+    | ----------------------------- | ----------------------------- | ----------------------------- | ----------------------------- | ----------------------------- | ----------------------------- |
+    | non_existent                  | cannot_happen                 | cannot_happen                 | cannot_happen                 | cannot_happen                 | 'Output Power Stable and OFF' |
+    | 'Output Power Stable and OFF' | 'Raising Output Power'        | 'Reducing Output Power'       | 'Output Power Stable and ON'  | ignore                        | cannot_happen                 |
+    | 'Reducing Output Power'       | 'Raising Output Power'        | 'Reducing Output Power'       | 'Output Power Stable and ON'  | 'Output Power Stable and OFF' | cannot_happen                 |
+    | 'Raising Output Power'        | 'Raising Output Power'        | 'Reducing Output Power'       | 'Output Power Stable and ON'  | 'Output Power Stable and OFF' | cannot_happen                 |
+    | 'Output Power Stable and ON'  | 'Raising Output Power'        | 'Reducing Output Power'       | ignore                        | 'Output Power Stable and OFF' | cannot_happen                 |
+
+  end state model;
+
+  state 'Output Power Stable and OFF' is
+    @noparse
+    //Turn off power
+    self.current_power_output = tube_wattage::off;
+    @endnoparse
+  end state;
+
+  state 'Reducing Output Power' is
+    @noparse
+    //Increase power setting
+    if (self.current_power_output == tube_wattage::med_low)
+       self.current_power_output = tube_wattage::low;
+    elif (self.current_power_output == tube_wattage::medium)
+       self.current_power_output = tube_wattage::med_low;
+    elif (self.current_power_output == tube_wattage::med_high)
+       self.current_power_output = tube_wattage::medium;
+    elif (self.current_power_output == tube_wattage::high)
+       self.current_power_output = tube_wattage::med_high;
+    end if;
+    @endnoparse
+  end state;
+
+  state 'Raising Output Power' is
+    @noparse
+    //Decrease power setting
+    if (self.current_power_output == tube_wattage::low)
+       self.current_power_output = tube_wattage::med_low;
+    elif (self.current_power_output == tube_wattage::med_low)
+       self.current_power_output = tube_wattage::medium;
+    elif (self.current_power_output == tube_wattage::medium)
+       self.current_power_output = tube_wattage::med_high;
+    elif (self.current_power_output == tube_wattage::med_high)
+       self.current_power_output = tube_wattage::high;
+    end if;
+    @endnoparse
+  end state;
+
+  state 'Output Power Stable and ON' is
+    @noparse
+    //Apply power to oven
+    @endnoparse
+  end state;
+
+end;

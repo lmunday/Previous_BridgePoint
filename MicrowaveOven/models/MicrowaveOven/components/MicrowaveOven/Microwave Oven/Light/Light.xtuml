@@ -1,0 +1,12 @@
+// BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
+
+within MicrowaveOven::components::MicrowaveOven::'Microwave Oven' is
+
+  //! //The internal oven light, illuminated only when the oven tube is powered on.
+  @key_letters("LIGH");
+  @class_num(3);
+  class Light is
+
+  end class;
+
+end;
