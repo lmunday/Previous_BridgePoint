@@ -1,0 +1,272 @@
+-- BP 7.1.6 content: InstanceStateMachine syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO SM_ISM
+	VALUES ("d3da5c51-a8e6-4ff0-8431-7da77c4c77ea",
+	"0e4d9a81-b8fa-40f1-b908-058469e3659a");
+INSERT INTO SM_SM
+	VALUES ("d3da5c51-a8e6-4ff0-8431-7da77c4c77ea",
+	'',
+	0);
+INSERT INTO SM_MOORE
+	VALUES ("d3da5c51-a8e6-4ff0-8431-7da77c4c77ea");
+INSERT INTO SM_STATE
+	VALUES ("9cc5bede-9252-4354-aa68-37fbdcdf091c",
+	"d3da5c51-a8e6-4ff0-8431-7da77c4c77ea",
+	"00000000-0000-0000-0000-000000000000",
+	'Being Seated',
+	2,
+	0);
+INSERT INTO SM_STATE
+	VALUES ("4a229e1e-907e-44cf-9aad-2f5031cef6c5",
+	"d3da5c51-a8e6-4ff0-8431-7da77c4c77ea",
+	"00000000-0000-0000-0000-000000000000",
+	'Occupied',
+	3,
+	0);
+INSERT INTO SM_STATE
+	VALUES ("5faff6a2-04ca-4411-949f-697f5c14e832",
+	"d3da5c51-a8e6-4ff0-8431-7da77c4c77ea",
+	"00000000-0000-0000-0000-000000000000",
+	'Bill Displayed',
+	4,
+	0);
+INSERT INTO SM_STATE
+	VALUES ("28bfdc70-da02-434e-b4a9-330b0b7e7e91",
+	"d3da5c51-a8e6-4ff0-8431-7da77c4c77ea",
+	"00000000-0000-0000-0000-000000000000",
+	'Receipt Displayed',
+	5,
+	0);
+INSERT INTO SM_MOAH
+	VALUES ("25e8a113-44b7-4af6-875b-18e051b1873b",
+	"d3da5c51-a8e6-4ff0-8431-7da77c4c77ea",
+	"9cc5bede-9252-4354-aa68-37fbdcdf091c");
+INSERT INTO SM_AH
+	VALUES ("25e8a113-44b7-4af6-875b-18e051b1873b",
+	"d3da5c51-a8e6-4ff0-8431-7da77c4c77ea");
+INSERT INTO SM_ACT
+	VALUES ("25e8a113-44b7-4af6-875b-18e051b1873b",
+	"d3da5c51-a8e6-4ff0-8431-7da77c4c77ea",
+	1,
+	'//generate operation updateStatus toRestaurant
+//create Customer
+create object instance tabl1 of TABL;
+create object instance cust1 of CUST;
+relate cust1 to tabl1 across R3.''Is Assigned To'';
+',
+	'',
+	0);
+INSERT INTO SM_MOAH
+	VALUES ("510342e3-1dc4-4003-b076-859f7f9a9f7d",
+	"d3da5c51-a8e6-4ff0-8431-7da77c4c77ea",
+	"4a229e1e-907e-44cf-9aad-2f5031cef6c5");
+INSERT INTO SM_AH
+	VALUES ("510342e3-1dc4-4003-b076-859f7f9a9f7d",
+	"d3da5c51-a8e6-4ff0-8431-7da77c4c77ea");
+INSERT INTO SM_ACT
+	VALUES ("510342e3-1dc4-4003-b076-859f7f9a9f7d",
+	"d3da5c51-a8e6-4ff0-8431-7da77c4c77ea",
+	1,
+	'//create Menu
+//create Order',
+	'',
+	0);
+INSERT INTO SM_MOAH
+	VALUES ("eb4c0ed0-84b0-4dbb-aa0c-8d941038cfcc",
+	"d3da5c51-a8e6-4ff0-8431-7da77c4c77ea",
+	"5faff6a2-04ca-4411-949f-697f5c14e832");
+INSERT INTO SM_AH
+	VALUES ("eb4c0ed0-84b0-4dbb-aa0c-8d941038cfcc",
+	"d3da5c51-a8e6-4ff0-8431-7da77c4c77ea");
+INSERT INTO SM_ACT
+	VALUES ("eb4c0ed0-84b0-4dbb-aa0c-8d941038cfcc",
+	"d3da5c51-a8e6-4ff0-8431-7da77c4c77ea",
+	1,
+	'//generate operation updateStatus toRestaurant
+//delete Menu',
+	'',
+	0);
+INSERT INTO SM_MOAH
+	VALUES ("a9704bf2-c712-4f7f-8140-6684bd5d0b13",
+	"d3da5c51-a8e6-4ff0-8431-7da77c4c77ea",
+	"28bfdc70-da02-434e-b4a9-330b0b7e7e91");
+INSERT INTO SM_AH
+	VALUES ("a9704bf2-c712-4f7f-8140-6684bd5d0b13",
+	"d3da5c51-a8e6-4ff0-8431-7da77c4c77ea");
+INSERT INTO SM_ACT
+	VALUES ("a9704bf2-c712-4f7f-8140-6684bd5d0b13",
+	"d3da5c51-a8e6-4ff0-8431-7da77c4c77ea",
+	1,
+	'//generate operation updateStatus toRestaurant',
+	'',
+	0);
+INSERT INTO GD_MD
+	VALUES ("a39c4902-8641-49a5-961a-d02d8b78043a",
+	8,
+	"d3da5c51-a8e6-4ff0-8431-7da77c4c77ea",
+	40,
+	0,
+	0,
+	1,
+	1,
+	1,
+	12,
+	1,
+	0,
+	0,
+	0,
+	0,
+	0,
+	'4.1.17',
+	'AMOS Workspace::Components::Component Diagram::Restaurant::Classes::Customer::Instance State Machine');
+INSERT INTO GD_GE
+	VALUES ("5aae0257-10b9-45a4-9b3d-c4b970efe534",
+	"a39c4902-8641-49a5-961a-d02d8b78043a",
+	"9cc5bede-9252-4354-aa68-37fbdcdf091c",
+	41,
+	0,
+	'AMOS Workspace::Components::Component Diagram::Restaurant::Classes::Customer::Instance State Machine::Being Seated');
+INSERT INTO GD_SHP
+	VALUES ("5aae0257-10b9-45a4-9b3d-c4b970efe534");
+INSERT INTO GD_NCS
+	VALUES ("5aae0257-10b9-45a4-9b3d-c4b970efe534");
+INSERT INTO DIM_ND
+	VALUES (193.000000,
+	97.000000,
+	"5aae0257-10b9-45a4-9b3d-c4b970efe534");
+INSERT INTO DIM_GE
+	VALUES (4171.000000,
+	3149.000000,
+	"5aae0257-10b9-45a4-9b3d-c4b970efe534",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("5aae0257-10b9-45a4-9b3d-c4b970efe534",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_CON
+	VALUES ("99aec362-e047-4b38-a06d-bb65d55011ab",
+	4380.000000,
+	3312.000000,
+	"5aae0257-10b9-45a4-9b3d-c4b970efe534");
+INSERT INTO DIM_CON
+	VALUES ("83a973d8-95bb-4539-a53f-cd35616b0218",
+	4380.000000,
+	3409.000000,
+	"5aae0257-10b9-45a4-9b3d-c4b970efe534");
+INSERT INTO GD_GE
+	VALUES ("54d37751-c330-47da-bd6b-24b614e4eb28",
+	"a39c4902-8641-49a5-961a-d02d8b78043a",
+	"4a229e1e-907e-44cf-9aad-2f5031cef6c5",
+	41,
+	0,
+	'AMOS Workspace::Components::Component Diagram::Restaurant::Classes::Customer::Instance State Machine::Occupied');
+INSERT INTO GD_SHP
+	VALUES ("54d37751-c330-47da-bd6b-24b614e4eb28");
+INSERT INTO GD_NCS
+	VALUES ("54d37751-c330-47da-bd6b-24b614e4eb28");
+INSERT INTO DIM_ND
+	VALUES (205.000000,
+	97.000000,
+	"54d37751-c330-47da-bd6b-24b614e4eb28");
+INSERT INTO DIM_GE
+	VALUES (4159.000000,
+	3317.000000,
+	"54d37751-c330-47da-bd6b-24b614e4eb28",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("54d37751-c330-47da-bd6b-24b614e4eb28",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_CON
+	VALUES ("af2203a8-5185-42dd-90ef-b55dd0c71f92",
+	4380.000000,
+	3480.000000,
+	"54d37751-c330-47da-bd6b-24b614e4eb28");
+INSERT INTO DIM_CON
+	VALUES ("3694afc3-dc9e-4006-a459-fe984c4b4385",
+	4477.000000,
+	3528.000000,
+	"54d37751-c330-47da-bd6b-24b614e4eb28");
+INSERT INTO GD_GE
+	VALUES ("39f94694-a3b5-43cb-941c-c2325f61e3e8",
+	"a39c4902-8641-49a5-961a-d02d8b78043a",
+	"5faff6a2-04ca-4411-949f-697f5c14e832",
+	41,
+	0,
+	'AMOS Workspace::Components::Component Diagram::Restaurant::Classes::Customer::Instance State Machine::Bill Displayed');
+INSERT INTO GD_SHP
+	VALUES ("39f94694-a3b5-43cb-941c-c2325f61e3e8");
+INSERT INTO GD_NCS
+	VALUES ("39f94694-a3b5-43cb-941c-c2325f61e3e8");
+INSERT INTO DIM_ND
+	VALUES (205.000000,
+	109.000000,
+	"39f94694-a3b5-43cb-941c-c2325f61e3e8");
+INSERT INTO DIM_GE
+	VALUES (4555.000000,
+	3317.000000,
+	"39f94694-a3b5-43cb-941c-c2325f61e3e8",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("39f94694-a3b5-43cb-941c-c2325f61e3e8",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_CON
+	VALUES ("35d50349-0191-4a54-afce-b4065af0e984",
+	4668.000000,
+	3528.000000,
+	"39f94694-a3b5-43cb-941c-c2325f61e3e8");
+INSERT INTO DIM_CON
+	VALUES ("35662615-150d-4cb7-9ab0-44c1bd8fc5e7",
+	4764.000000,
+	3480.000000,
+	"39f94694-a3b5-43cb-941c-c2325f61e3e8");
+INSERT INTO GD_GE
+	VALUES ("62c0adda-fca0-4686-ba2a-a58e5c83a48f",
+	"a39c4902-8641-49a5-961a-d02d8b78043a",
+	"28bfdc70-da02-434e-b4a9-330b0b7e7e91",
+	41,
+	0,
+	'AMOS Workspace::Components::Component Diagram::Restaurant::Classes::Customer::Instance State Machine::Receipt Displayed');
+INSERT INTO GD_SHP
+	VALUES ("62c0adda-fca0-4686-ba2a-a58e5c83a48f");
+INSERT INTO GD_NCS
+	VALUES ("62c0adda-fca0-4686-ba2a-a58e5c83a48f");
+INSERT INTO DIM_ND
+	VALUES (205.000000,
+	97.000000,
+	"62c0adda-fca0-4686-ba2a-a58e5c83a48f");
+INSERT INTO DIM_GE
+	VALUES (4555.000000,
+	3149.000000,
+	"62c0adda-fca0-4686-ba2a-a58e5c83a48f",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("62c0adda-fca0-4686-ba2a-a58e5c83a48f",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_CON
+	VALUES ("a75c0bb6-e002-430f-a055-5265ce5c6318",
+	4764.000000,
+	3409.000000,
+	"62c0adda-fca0-4686-ba2a-a58e5c83a48f");
+INSERT INTO DIM_CON
+	VALUES ("b0f95bd1-70c9-455c-90d5-e013ad109572",
+	4706.000000,
+	3312.000000,
+	"62c0adda-fca0-4686-ba2a-a58e5c83a48f");
+INSERT INTO DIM_DIA
+	VALUES ("a39c4902-8641-49a5-961a-d02d8b78043a",
+	'',
+	1.000000,
+	0.000000,
+	0.000000,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_OBJ_PROXY
+	VALUES ("0e4d9a81-b8fa-40f1-b908-058469e3659a",
+	'Customer',
+	5,
+	'CUST',
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'../Customer.xtuml');
